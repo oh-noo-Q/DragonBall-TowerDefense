@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b06828fdb61be4996e473f8e6c7b74, type: 3}
+  m_Name: Level39
+  m_EditorClassIdentifier: 
+  playerStrength: 9
+  Towers:
+  - name: Tower 1
+    floors:
+    - name: Floor 1
+      gate: -1
+      interactableObjects:
+      - typeStr: ENEMY
+        type: 0
+        ID: 1
+        operation: 0
+        value: 7
+      - typeStr: ENEMY
+        type: 0
+        ID: 20
+        operation: 0
+        value: 15
+    - name: Floor 2
+      gate: -1
+      interactableObjects:
+      - typeStr: ENEMY
+        type: 0
+        ID: 21
+        operation: 0
+        value: 30
+      - typeStr: ENEMY
+        type: 0
+        ID: 20
+        operation: 0
+        value: 42
+      - typeStr: ENEMY
+        type: 0
+        ID: 16
+        operation: 0
+        value: 18
+    - name: Floor 3
+      gate: -1
+      interactableObjects:
+      - typeStr: ENEMY
+        type: 0
+        ID: 18
+        operation: 0
+        value: 114
+      - typeStr: TRAP
+        type: 1
+        ID: 1
+        operation: 1
+        value: 56
+      - typeStr: ENEMY
+        type: 0
+        ID: 17
+        operation: 0
+        value: 12
+    - name: Floor 4
+      gate: -1
+      interactableObjects:
+      - typeStr: TRAP
+        type: 1
+        ID: 2
+        operation: 1
+        value: 89
+      - typeStr: TRAP
+        type: 1
+        ID: 1
+        operation: 1
+        value: 99
+      - typeStr: ENEMY
+        type: 0
+        ID: 19
+        operation: 0
+        value: 0
+  giantBossID: -1
+  giantBossStrength: 100

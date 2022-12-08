@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b06828fdb61be4996e473f8e6c7b74, type: 3}
+  m_Name: Level15
+  m_EditorClassIdentifier: 
+  playerStrength: 19
+  Towers:
+  - name: Tower 1
+    floors:
+    - name: Floor 1
+      gate: -1
+      interactableObjects: []
+  - name: Tower 2
+    floors:
+    - name: Floor 1
+      gate: -1
+      interactableObjects:
+      - typeStr: ENEMY
+        type: 0
+        ID: 8
+        operation: 0
+        value: 20
+        hideStrength: 0
+    - name: Floor 2
+      gate: -1
+      interactableObjects:
+      - typeStr: ENEMY
+        type: 0
+        ID: 3
+        operation: 0
+        value: 7
+        hideStrength: 0
+      - typeStr: ENEMY
+        type: 0
+        ID: 7
+        operation: 0
+        value: 30
+        hideStrength: 0
+      - typeStr: ENEMY
+        type: 0
+        ID: 2
+        operation: 0
+        value: 90
+        hideStrength: 0
+    - name: Floor 3
+      gate: -1
+      interactableObjects:
+      - typeStr: DragonBall
+        type: 3
+        ID: 0
+        operation: 2
+        value: 3
+        hideStrength: 0
+    - name: Floor 4
+      gate: -1
+      interactableObjects:
+      - typeStr: ENEMY
+        type: 0
+        ID: 7
+        operation: 0
+        value: 150
+        hideStrength: 0
+  giantBossID: -1
+  giantBossStrength: 100

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a364333090e410842ae5fd5fce0c2f1a, type: 3}
+  m_Name: GiantBossSO
+  m_EditorClassIdentifier: 
+  giantBosses:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 1
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 1
+    _keyValues: 000000000100000002000000030000000400000005000000
+    _keys: 000000000100000002000000030000000400000005000000
+    _values:
+    - {fileID: 3542059866113912401, guid: 5da309259d988334ea6e578d0f012566, type: 3}
+    - {fileID: 3542059866113912401, guid: 5da309259d988334ea6e578d0f012566, type: 3}
+    - {fileID: 2689715567460044510, guid: ac7fb8e40bdb3f54d8ab99a14249f799, type: 3}
+    - {fileID: 7404954723387790137, guid: 5da79c48f4e2ea14a9e1970d5754d4ce, type: 3}
+    - {fileID: 3542059866113912401, guid: d3141b4a5e9d08f4d8d160bf2c81aa98, type: 3}
+    - {fileID: 8619798595420450772, guid: 9e3c35c7cb7b541448a9c926da431ddc, type: 3}

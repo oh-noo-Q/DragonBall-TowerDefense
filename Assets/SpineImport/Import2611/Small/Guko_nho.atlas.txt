@@ -1,0 +1,948 @@
+
+Guko_nho.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4/Layer 1
+  rotate: true
+  xy: 2, 1285
+  size: 130, 224
+  orig: 130, 224
+  offset: 0, 0
+  index: -1
+4/Layer 1b
+  rotate: true
+  xy: 2, 834
+  size: 160, 231
+  orig: 160, 231
+  offset: 0, 0
+  index: -1
+4/Layer 6
+  rotate: true
+  xy: 300, 1666
+  size: 106, 298
+  orig: 106, 298
+  offset: 0, 0
+  index: -1
+4/Layer 8
+  rotate: true
+  xy: 639, 1963
+  size: 82, 193
+  orig: 82, 193
+  offset: 0, 0
+  index: -1
+4/chan1
+  rotate: true
+  xy: 228, 1277
+  size: 138, 234
+  orig: 138, 234
+  offset: 0, 0
+  index: -1
+4/chan2
+  rotate: true
+  xy: 2, 1896
+  size: 102, 177
+  orig: 102, 177
+  offset: 0, 0
+  index: -1
+4/chan4
+  rotate: true
+  xy: 2, 1551
+  size: 119, 124
+  orig: 119, 124
+  offset: 0, 0
+  index: -1
+4/dau
+  rotate: false
+  xy: 1027, 1407
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+4/tay1
+  rotate: true
+  xy: 676, 1127
+  size: 139, 239
+  orig: 139, 239
+  offset: 0, 0
+  index: -1
+4/tay2
+  rotate: false
+  xy: 1184, 1530
+  size: 203, 126
+  orig: 203, 126
+  offset: 0, 0
+  index: -1
+Cellcon/Layer 38
+  rotate: true
+  xy: 1068, 978
+  size: 141, 251
+  orig: 143, 254
+  offset: 1, 2
+  index: -1
+Cellcon/Layer 6
+  rotate: true
+  xy: 2, 1672
+  size: 104, 296
+  orig: 104, 296
+  offset: 0, 0
+  index: -1
+Cellcon/Layer 8
+  rotate: true
+  xy: 834, 1963
+  size: 82, 193
+  orig: 82, 193
+  offset: 0, 0
+  index: -1
+Cellcon/chan1
+  rotate: true
+  xy: 464, 1277
+  size: 138, 234
+  orig: 138, 234
+  offset: 0, 0
+  index: -1
+Cellcon/chan2
+  rotate: true
+  xy: 181, 1882
+  size: 102, 177
+  orig: 102, 177
+  offset: 0, 0
+  index: -1
+Cellcon/chan4
+  rotate: true
+  xy: 128, 1551
+  size: 119, 124
+  orig: 119, 124
+  offset: 0, 0
+  index: -1
+Cellcon/dau
+  rotate: false
+  xy: 1156, 1401
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+Cellcon/tay1
+  rotate: true
+  xy: 1347, 1119
+  size: 139, 239
+  orig: 139, 239
+  offset: 0, 0
+  index: -1
+Cellcon/tay2
+  rotate: false
+  xy: 1729, 1529
+  size: 203, 126
+  orig: 203, 126
+  offset: 0, 0
+  index: -1
+Goten/Layer 24
+  rotate: false
+  xy: 1034, 569
+  size: 263, 214
+  orig: 265, 216
+  offset: 1, 1
+  index: -1
+Goten/Layer 6
+  rotate: true
+  xy: 600, 1666
+  size: 106, 298
+  orig: 106, 298
+  offset: 0, 0
+  index: -1
+Goten/Layer 8
+  rotate: true
+  xy: 1029, 1963
+  size: 82, 193
+  orig: 82, 193
+  offset: 0, 0
+  index: -1
+Goten/chan1
+  rotate: true
+  xy: 700, 1268
+  size: 138, 234
+  orig: 138, 234
+  offset: 0, 0
+  index: -1
+Goten/chan2
+  rotate: true
+  xy: 2, 1792
+  size: 102, 177
+  orig: 102, 177
+  offset: 0, 0
+  index: -1
+Goten/chan4
+  rotate: true
+  xy: 254, 1545
+  size: 119, 124
+  orig: 119, 124
+  offset: 0, 0
+  index: -1
+Goten/dau
+  rotate: false
+  xy: 1285, 1401
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+Goten/tay1
+  rotate: true
+  xy: 1588, 1119
+  size: 139, 239
+  orig: 139, 239
+  offset: 0, 0
+  index: -1
+Goten/tay2
+  rotate: false
+  xy: 2, 1423
+  size: 203, 126
+  orig: 203, 126
+  offset: 0, 0
+  index: -1
+Krilin/Layer 6
+  rotate: true
+  xy: 900, 1660
+  size: 106, 298
+  orig: 106, 298
+  offset: 0, 0
+  index: -1
+Krilin/Layer 8
+  rotate: true
+  xy: 1224, 1963
+  size: 82, 193
+  orig: 82, 193
+  offset: 0, 0
+  index: -1
+Krilin/chan1
+  rotate: true
+  xy: 1090, 1261
+  size: 138, 234
+  orig: 138, 234
+  offset: 0, 0
+  index: -1
+Krilin/chan2
+  rotate: true
+  xy: 181, 1778
+  size: 102, 177
+  orig: 102, 177
+  offset: 0, 0
+  index: -1
+Krilin/chan4
+  rotate: true
+  xy: 380, 1545
+  size: 119, 124
+  orig: 119, 124
+  offset: 0, 0
+  index: -1
+Krilin/dau
+  rotate: false
+  xy: 1414, 1401
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+Krilin/tay1
+  rotate: true
+  xy: 2, 996
+  size: 139, 239
+  orig: 139, 239
+  offset: 0, 0
+  index: -1
+Trunksnho/tay1
+  rotate: true
+  xy: 2, 996
+  size: 139, 239
+  orig: 139, 239
+  offset: 0, 0
+  index: -1
+Krilin/tay2
+  rotate: false
+  xy: 207, 1417
+  size: 203, 126
+  orig: 203, 126
+  offset: 0, 0
+  index: -1
+Layer 231
+  rotate: true
+  xy: 1905, 1248
+  size: 150, 140
+  orig: 161, 156
+  offset: 6, 10
+  index: -1
+Trunksnho/Layer 24
+  rotate: false
+  xy: 917, 1123
+  size: 166, 142
+  orig: 169, 148
+  offset: 2, 5
+  index: -1
+Trunksnho/Layer 6
+  rotate: true
+  xy: 1398, 1657
+  size: 106, 298
+  orig: 106, 298
+  offset: 0, 0
+  index: -1
+Trunksnho/Layer 8
+  rotate: true
+  xy: 1419, 1963
+  size: 82, 193
+  orig: 82, 193
+  offset: 0, 0
+  index: -1
+Trunksnho/chan1
+  rotate: true
+  xy: 1326, 1261
+  size: 138, 234
+  orig: 138, 234
+  offset: 0, 0
+  index: -1
+Trunksnho/chan2
+  rotate: true
+  xy: 907, 1768
+  size: 102, 177
+  orig: 102, 177
+  offset: 0, 0
+  index: -1
+Trunksnho/chan4
+  rotate: true
+  xy: 506, 1545
+  size: 119, 124
+  orig: 119, 124
+  offset: 0, 0
+  index: -1
+Trunksnho/dau
+  rotate: false
+  xy: 1543, 1401
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+Trunksnho/tay2
+  rotate: false
+  xy: 412, 1417
+  size: 203, 126
+  orig: 203, 126
+  offset: 0, 0
+  index: -1
+bui/Layer 1
+  rotate: false
+  xy: 936, 1267
+  size: 152, 138
+  orig: 512, 512
+  offset: 148, 112
+  index: -1
+bui/Layer 10
+  rotate: false
+  xy: 1040, 348
+  size: 367, 203
+  orig: 512, 512
+  offset: 51, 112
+  index: -1
+bui/Layer 11
+  rotate: false
+  xy: 1409, 348
+  size: 367, 203
+  orig: 512, 512
+  offset: 51, 112
+  index: -1
+bui/Layer 12
+  rotate: false
+  xy: 1299, 553
+  size: 357, 200
+  orig: 512, 512
+  offset: 73, 112
+  index: -1
+bui/Layer 13
+  rotate: false
+  xy: 1658, 553
+  size: 357, 200
+  orig: 512, 512
+  offset: 73, 112
+  index: -1
+bui/Layer 14
+  rotate: false
+  xy: 336, 406
+  size: 350, 201
+  orig: 512, 512
+  offset: 84, 112
+  index: -1
+bui/Layer 15
+  rotate: false
+  xy: 688, 366
+  size: 350, 201
+  orig: 512, 512
+  offset: 84, 112
+  index: -1
+bui/Layer 16
+  rotate: false
+  xy: 2, 629
+  size: 348, 197
+  orig: 512, 512
+  offset: 89, 112
+  index: -1
+bui/Layer 17
+  rotate: false
+  xy: 352, 609
+  size: 348, 197
+  orig: 512, 512
+  offset: 89, 112
+  index: -1
+bui/Layer 18
+  rotate: false
+  xy: 419, 808
+  size: 346, 176
+  orig: 512, 512
+  offset: 94, 112
+  index: -1
+bui/Layer 19
+  rotate: false
+  xy: 767, 800
+  size: 346, 176
+  orig: 512, 512
+  offset: 94, 112
+  index: -1
+bui/Layer 2
+  rotate: false
+  xy: 1115, 785
+  size: 245, 182
+  orig: 512, 512
+  offset: 101, 112
+  index: -1
+bui/Layer 21
+  rotate: false
+  xy: 1692, 946
+  size: 343, 154
+  orig: 512, 512
+  offset: 98, 112
+  index: -1
+bui/Layer 22
+  rotate: false
+  xy: 243, 996
+  size: 341, 139
+  orig: 512, 512
+  offset: 98, 112
+  index: -1
+bui/Layer 23
+  rotate: false
+  xy: 1562, 1260
+  size: 341, 138
+  orig: 512, 512
+  offset: 98, 112
+  index: -1
+bui/Layer 24
+  rotate: false
+  xy: 1389, 1530
+  size: 338, 125
+  orig: 512, 512
+  offset: 101, 112
+  index: -1
+bui/Layer 3
+  rotate: false
+  xy: 1362, 770
+  size: 264, 187
+  orig: 512, 512
+  offset: 96, 112
+  index: -1
+bui/Layer 4
+  rotate: false
+  xy: 1628, 755
+  size: 309, 189
+  orig: 512, 512
+  offset: 66, 112
+  index: -1
+bui/Layer 5
+  rotate: false
+  xy: 702, 600
+  size: 330, 198
+  orig: 512, 512
+  offset: 52, 112
+  index: -1
+bui/Layer 6
+  rotate: false
+  xy: 2, 424
+  size: 332, 203
+  orig: 512, 512
+  offset: 52, 112
+  index: -1
+bui/Layer 7
+  rotate: false
+  xy: 2, 200
+  size: 355, 204
+  orig: 512, 512
+  offset: 47, 112
+  index: -1
+bui/Layer 8
+  rotate: false
+  xy: 651, 160
+  size: 358, 204
+  orig: 512, 512
+  offset: 49, 112
+  index: -1
+bui/Layer 9
+  rotate: false
+  xy: 1011, 142
+  size: 358, 204
+  orig: 512, 512
+  offset: 49, 112
+  index: -1
+deFizea_1/Layer 19
+  rotate: false
+  xy: 387, 1973
+  size: 159, 72
+  orig: 161, 74
+  offset: 1, 1
+  index: -1
+deFizea_1/Layer 6
+  rotate: true
+  xy: 884, 1536
+  size: 122, 298
+  orig: 122, 298
+  offset: 0, 0
+  index: -1
+deFizea_1/Layer 8
+  rotate: true
+  xy: 1614, 1963
+  size: 82, 193
+  orig: 82, 193
+  offset: 0, 0
+  index: -1
+deFizea_1/chan1
+  rotate: true
+  xy: 204, 1137
+  size: 138, 234
+  orig: 138, 234
+  offset: 0, 0
+  index: -1
+deFizea_1/chan2
+  rotate: true
+  xy: 1086, 1768
+  size: 102, 177
+  orig: 102, 177
+  offset: 0, 0
+  index: -1
+deFizea_1/chan4
+  rotate: true
+  xy: 632, 1545
+  size: 119, 124
+  orig: 119, 124
+  offset: 0, 0
+  index: -1
+deFizea_1/dau
+  rotate: false
+  xy: 1672, 1400
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+deFizea_1/tay1
+  rotate: true
+  xy: 586, 986
+  size: 139, 239
+  orig: 139, 239
+  offset: 0, 0
+  index: -1
+deFizea_1/tay2
+  rotate: false
+  xy: 617, 1417
+  size: 203, 126
+  orig: 203, 126
+  offset: 0, 0
+  index: -1
+deFizea_2/Layer 34
+  rotate: false
+  xy: 1085, 1121
+  size: 260, 138
+  orig: 262, 141
+  offset: 1, 2
+  index: -1
+deFizea_2/Layer 6
+  rotate: true
+  xy: 1698, 1657
+  size: 106, 298
+  orig: 106, 298
+  offset: 0, 0
+  index: -1
+deFizea_2/Layer 8
+  rotate: true
+  xy: 1809, 1963
+  size: 82, 193
+  orig: 82, 193
+  offset: 0, 0
+  index: -1
+deFizea_2/chan1
+  rotate: true
+  xy: 440, 1137
+  size: 138, 234
+  orig: 138, 234
+  offset: 0, 0
+  index: -1
+deFizea_2/chan2
+  rotate: true
+  xy: 1265, 1768
+  size: 102, 177
+  orig: 102, 177
+  offset: 0, 0
+  index: -1
+deFizea_2/chan4
+  rotate: true
+  xy: 758, 1545
+  size: 119, 124
+  orig: 119, 124
+  offset: 0, 0
+  index: -1
+deFizea_2/dau
+  rotate: false
+  xy: 1801, 1400
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+deFizea_2/tay1
+  rotate: true
+  xy: 827, 982
+  size: 139, 239
+  orig: 139, 239
+  offset: 0, 0
+  index: -1
+deFizea_2/tay2
+  rotate: false
+  xy: 822, 1408
+  size: 203, 126
+  orig: 203, 126
+  offset: 0, 0
+  index: -1
+e1
+  rotate: false
+  xy: 2, 1142
+  size: 200, 141
+  orig: 205, 143
+  offset: 0, 0
+  index: -1
+e2
+  rotate: false
+  xy: 1200, 1658
+  size: 196, 108
+  orig: 197, 108
+  offset: 0, 0
+  index: -1
+e2/0
+  rotate: false
+  xy: 1321, 969
+  size: 184, 148
+  orig: 200, 167
+  offset: 15, 4
+  index: -1
+e2/1
+  rotate: false
+  xy: 1829, 1102
+  size: 181, 144
+  orig: 198, 152
+  offset: 16, 4
+  index: -1
+e2/2
+  rotate: false
+  xy: 235, 828
+  size: 182, 166
+  orig: 201, 174
+  offset: 16, 3
+  index: -1
+e2/3
+  rotate: false
+  xy: 1507, 959
+  size: 183, 158
+  orig: 201, 168
+  offset: 16, 4
+  index: -1
+e3
+  rotate: true
+  xy: 47, 2008
+  size: 37, 101
+  orig: 37, 101
+  offset: 0, 0
+  index: -1
+e5/RagePink_0
+  rotate: false
+  xy: 1778, 269
+  size: 245, 282
+  orig: 265, 297
+  offset: 10, 2
+  index: -1
+e5/RagePink_2
+  rotate: true
+  xy: 359, 169
+  size: 235, 290
+  orig: 256, 297
+  offset: 10, 1
+  index: -1
+e5/RagePink_3
+  rotate: true
+  xy: 1666, 30
+  size: 237, 294
+  orig: 256, 297
+  offset: 10, 3
+  index: -1
+e5/RagePink_7
+  rotate: true
+  xy: 1371, 110
+  size: 236, 293
+  orig: 256, 297
+  offset: 10, 4
+  index: -1
+km/km10_00
+  rotate: true
+  xy: 2, 2020
+  size: 25, 43
+  orig: 569, 320
+  offset: 26, 157
+  index: -1
+km/km10_01
+  rotate: false
+  xy: 318, 1986
+  size: 67, 59
+  orig: 569, 320
+  offset: 25, 150
+  index: -1
+km/km10_02
+  rotate: false
+  xy: 548, 1971
+  size: 89, 74
+  orig: 569, 320
+  offset: 24, 142
+  index: -1
+km/km10_03
+  rotate: false
+  xy: 360, 1872
+  size: 546, 89
+  orig: 569, 320
+  offset: 23, 138
+  index: -1
+km/km10_04
+  rotate: false
+  xy: 1453, 1867
+  size: 546, 94
+  orig: 569, 320
+  offset: 23, 141
+  index: -1
+km/km10_05
+  rotate: false
+  xy: 1444, 1765
+  size: 545, 100
+  orig: 569, 320
+  offset: 24, 135
+  index: -1
+km/km10_06
+  rotate: false
+  xy: 360, 1774
+  size: 545, 96
+  orig: 569, 320
+  offset: 24, 134
+  index: -1
+km/km10_07
+  rotate: false
+  xy: 908, 1872
+  size: 543, 89
+  orig: 569, 320
+  offset: 26, 141
+  index: -1
+km/km10_08
+  rotate: false
+  xy: 222, 1999
+  size: 94, 46
+  orig: 569, 320
+  offset: 27, 163
+  index: -1
+km/km10_09
+  rotate: false
+  xy: 150, 2000
+  size: 70, 45
+  orig: 569, 320
+  offset: 27, 163
+  index: -1
+
+Guko_nho2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4/Layer 9
+  rotate: true
+  xy: 1176, 1669
+  size: 243, 437
+  orig: 243, 437
+  offset: 0, 0
+  index: -1
+bui/Layer 20
+  rotate: false
+  xy: 294, 1166
+  size: 402, 255
+  orig: 512, 512
+  offset: 98, 11
+  index: -1
+dan
+  rotate: false
+  xy: 698, 882
+  size: 550, 536
+  orig: 605, 574
+  offset: 33, 22
+  index: -1
+dan2
+  rotate: true
+  xy: 1250, 759
+  size: 654, 657
+  orig: 661, 670
+  offset: 6, 9
+  index: -1
+dan3 - Copy
+  rotate: true
+  xy: 2, 313
+  size: 444, 1352
+  orig: 489, 1365
+  offset: 25, 0
+  index: -1
+e4/Group 1
+  rotate: true
+  xy: 2, 1171
+  size: 255, 290
+  orig: 265, 297
+  offset: 5, 0
+  index: -1
+e4/Group 2
+  rotate: true
+  xy: 1513, 1415
+  size: 251, 290
+  orig: 261, 297
+  offset: 5, 0
+  index: -1
+e4/Group 3
+  rotate: true
+  xy: 1615, 1668
+  size: 244, 297
+  orig: 256, 297
+  offset: 5, 0
+  index: -1
+e4/Group 4
+  rotate: true
+  xy: 315, 1427
+  size: 246, 303
+  orig: 246, 306
+  offset: 0, 0
+  index: -1
+e4/Group 5
+  rotate: true
+  xy: 919, 1420
+  size: 247, 296
+  orig: 247, 297
+  offset: 0, 0
+  index: -1
+e4/Group 6
+  rotate: true
+  xy: 1217, 1420
+  size: 247, 294
+  orig: 257, 297
+  offset: 5, 0
+  index: -1
+e4/Group 7
+  rotate: true
+  xy: 620, 1423
+  size: 246, 297
+  orig: 246, 297
+  offset: 0, 0
+  index: -1
+e4/Group 8
+  rotate: true
+  xy: 2, 1428
+  size: 245, 311
+  orig: 245, 311
+  offset: 0, 0
+  index: -1
+e5/RagePink_1
+  rotate: true
+  xy: 890, 1671
+  size: 241, 284
+  orig: 261, 297
+  offset: 10, 0
+  index: -1
+e5/RagePink_4
+  rotate: true
+  xy: 2, 1675
+  size: 237, 297
+  orig: 257, 297
+  offset: 10, 0
+  index: -1
+e5/RagePink_5
+  rotate: true
+  xy: 301, 1675
+  size: 237, 289
+  orig: 257, 297
+  offset: 10, 0
+  index: -1
+e5/RagePink_6
+  rotate: true
+  xy: 592, 1675
+  size: 237, 296
+  orig: 257, 297
+  offset: 10, 1
+  index: -1
+
+Guko_nho3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dan3
+  rotate: true
+  xy: 2, 1432
+  size: 480, 1365
+  orig: 489, 1365
+  offset: 4, 0
+  index: -1
+e1/goku_2
+  rotate: true
+  xy: 2, 595
+  size: 835, 941
+  orig: 1000, 1000
+  offset: 78, 0
+  index: -1
+e1/goku_3
+  rotate: true
+  xy: 945, 574
+  size: 856, 967
+  orig: 1000, 1000
+  offset: 65, 0
+  index: -1
+
+Guko_nho4.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+e1/goku_0
+  rotate: false
+  xy: 2, 2
+  size: 861, 986
+  orig: 1000, 1000
+  offset: 70, 0
+  index: -1
+e1/goku_1
+  rotate: false
+  xy: 886, 1031
+  size: 860, 959
+  orig: 1000, 1000
+  offset: 71, 0
+  index: -1
+e1/goku_4
+  rotate: false
+  xy: 2, 990
+  size: 882, 1000
+  orig: 1000, 1000
+  offset: 53, 0
+  index: -1
+e1/goku_5
+  rotate: false
+  xy: 865, 2
+  size: 861, 986
+  orig: 1000, 1000
+  offset: 70, 0
+  index: -1

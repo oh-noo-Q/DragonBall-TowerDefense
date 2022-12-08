@@ -1,0 +1,202 @@
+
+Khidot_cadic.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_1
+  rotate: true
+  xy: 2, 102
+  size: 741, 337
+  orig: 741, 337
+  offset: 0, 0
+  index: -1
+body_2
+  rotate: true
+  xy: 341, 480
+  size: 479, 263
+  orig: 479, 263
+  offset: 0, 0
+  index: -1
+body_3
+  rotate: true
+  xy: 515, 67
+  size: 411, 234
+  orig: 412, 234
+  offset: 0, 0
+  index: -1
+chan_1
+  rotate: true
+  xy: 372, 1151
+  size: 408, 239
+  orig: 408, 239
+  offset: 0, 0
+  index: -1
+chan_2
+  rotate: true
+  xy: 606, 556
+  size: 408, 239
+  orig: 408, 239
+  offset: 0, 0
+  index: -1
+chan_3
+  rotate: false
+  xy: 257, 1561
+  size: 264, 484
+  orig: 264, 484
+  offset: 0, 0
+  index: -1
+chan_4
+  rotate: false
+  xy: 523, 1644
+  size: 257, 401
+  orig: 257, 401
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: false
+  xy: 2, 845
+  size: 74, 1200
+  orig: 74, 1200
+  offset: 0, 0
+  index: -1
+kmS20_00
+  rotate: true
+  xy: 66, 63
+  size: 37, 36
+  orig: 569, 320
+  offset: 26, 163
+  index: -1
+kmS20_01
+  rotate: true
+  xy: 990, 824
+  size: 201, 122
+  orig: 569, 320
+  offset: 5, 121
+  index: -1
+kmS20_02
+  rotate: false
+  xy: 847, 557
+  size: 216, 132
+  orig: 569, 320
+  offset: 1, 113
+  index: -1
+kmS20_03
+  rotate: true
+  xy: 847, 691
+  size: 334, 141
+  orig: 569, 320
+  offset: 0, 109
+  index: -1
+kmS20_04
+  rotate: true
+  xy: 223, 961
+  size: 513, 147
+  orig: 569, 320
+  offset: 0, 108
+  index: -1
+kmS20_05
+  rotate: true
+  xy: 78, 905
+  size: 569, 143
+  orig: 569, 320
+  offset: 0, 113
+  index: -1
+kmS20_07
+  rotate: true
+  xy: 78, 905
+  size: 569, 143
+  orig: 569, 320
+  offset: 0, 113
+  index: -1
+kmS20_06
+  rotate: true
+  xy: 78, 1476
+  size: 569, 177
+  orig: 569, 320
+  offset: 0, 94
+  index: -1
+kmS20_08
+  rotate: true
+  xy: 341, 6
+  size: 472, 172
+  orig: 569, 320
+  offset: 0, 96
+  index: -1
+kmS20_09
+  rotate: true
+  xy: 966, 33
+  size: 152, 149
+  orig: 569, 320
+  offset: 3, 104
+  index: -1
+kmS20_10
+  rotate: true
+  xy: 2, 23
+  size: 77, 62
+  orig: 569, 320
+  offset: 14, 149
+  index: -1
+mat_1
+  rotate: false
+  xy: 372, 964
+  size: 155, 185
+  orig: 157, 188
+  offset: 1, 1
+  index: -1
+mat_2
+  rotate: true
+  xy: 990, 699
+  size: 123, 139
+  orig: 123, 139
+  offset: 0, 0
+  index: -1
+mat_3
+  rotate: false
+  xy: 751, 187
+  size: 333, 367
+  orig: 334, 367
+  offset: 0, 0
+  index: -1
+tay_1
+  rotate: true
+  xy: 529, 966
+  size: 183, 213
+  orig: 186, 215
+  offset: 2, 1
+  index: -1
+tay_2
+  rotate: true
+  xy: 744, 1027
+  size: 231, 203
+  orig: 231, 203
+  offset: 0, 0
+  index: -1
+tay_3
+  rotate: false
+  xy: 613, 1260
+  size: 335, 382
+  orig: 335, 382
+  offset: 0, 0
+  index: -1
+tay_4
+  rotate: true
+  xy: 751, 2
+  size: 183, 213
+  orig: 186, 215
+  offset: 1, 1
+  index: -1
+tay_5
+  rotate: true
+  xy: 949, 1027
+  size: 231, 203
+  orig: 231, 203
+  offset: 0, 0
+  index: -1
+tay_6
+  rotate: false
+  xy: 782, 1663
+  size: 335, 382
+  orig: 335, 382
+  offset: 0, 0
+  index: -1

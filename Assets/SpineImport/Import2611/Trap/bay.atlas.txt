@@ -1,0 +1,20 @@
+
+bay.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bay1
+  rotate: false
+  xy: 2, 2
+  size: 228, 85
+  orig: 228, 85
+  offset: 0, 0
+  index: -1
+bay2
+  rotate: false
+  xy: 232, 39
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Guko_nho_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: a57e6797d5be7664cabdef9fb90b58b7, type: 3}
+  materials:
+  - {fileID: 2100000, guid: d3a0b770c10afa146a431dd1134bc86f, type: 2}
+  - {fileID: 2100000, guid: b861bf48701c4804a8be36767b6fc9da, type: 2}
+  - {fileID: 2100000, guid: 257d042179a31794b827fb37ae9a5a90, type: 2}
+  - {fileID: 2100000, guid: 120696ae09484d94c8eb7140d635685d, type: 2}

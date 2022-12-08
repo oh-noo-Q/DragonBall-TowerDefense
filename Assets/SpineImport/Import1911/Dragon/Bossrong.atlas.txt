@@ -1,0 +1,69 @@
+
+Bossrong.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 12
+  rotate: false
+  xy: 2, 287
+  size: 669, 286
+  orig: 669, 319
+  offset: 0, 0
+  index: -1
+Layer 12b
+  rotate: true
+  xy: 715, 193
+  size: 604, 295
+  orig: 604, 319
+  offset: 0, 1
+  index: -1
+Layer 42
+  rotate: true
+  xy: 171, 908
+  size: 110, 171
+  orig: 113, 174
+  offset: 2, 2
+  index: -1
+Layer 42a
+  rotate: true
+  xy: 815, 799
+  size: 219, 203
+  orig: 219, 204
+  offset: 0, 0
+  index: -1
+Layer 42b
+  rotate: false
+  xy: 242, 575
+  size: 471, 295
+  orig: 479, 300
+  offset: 0, 5
+  index: -1
+Layer 42c
+  rotate: true
+  xy: 344, 883
+  size: 135, 146
+  orig: 137, 149
+  offset: 1, 2
+  index: -1
+Layer 42d
+  rotate: false
+  xy: 2, 694
+  size: 238, 212
+  orig: 238, 261
+  offset: 0, 0
+  index: -1
+Layer 44
+  rotate: true
+  xy: 492, 872
+  size: 146, 321
+  orig: 148, 321
+  offset: 0, 0
+  index: -1
+Layer 45
+  rotate: true
+  xy: 2, 921
+  size: 97, 167
+  orig: 99, 169
+  offset: 1, 1
+  index: -1

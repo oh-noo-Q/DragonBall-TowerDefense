@@ -1,0 +1,62 @@
+
+girl.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 1
+  rotate: true
+  xy: 373, 1308
+  size: 345, 637
+  orig: 345, 637
+  offset: 0, 0
+  index: -1
+Layer 18
+  rotate: true
+  xy: 1352, 1650
+  size: 292, 479
+  orig: 292, 479
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: true
+  xy: 2, 1408
+  size: 323, 369
+  orig: 325, 371
+  offset: 1, 1
+  index: -1
+Layer 20
+  rotate: false
+  xy: 1012, 1265
+  size: 488, 383
+  orig: 488, 384
+  offset: 0, 1
+  index: -1
+Layer 21
+  rotate: true
+  xy: 1502, 1264
+  size: 384, 440
+  orig: 384, 440
+  offset: 0, 0
+  index: -1
+Layer 22
+  rotate: true
+  xy: 2, 1859
+  size: 83, 173
+  orig: 86, 175
+  offset: 2, 1
+  index: -1
+Layer 8
+  rotate: true
+  xy: 702, 1655
+  size: 287, 648
+  orig: 288, 650
+  offset: 0, 2
+  index: -1
+Layer 9
+  rotate: true
+  xy: 177, 1733
+  size: 209, 523
+  orig: 209, 523
+  offset: 0, 0
+  index: -1
