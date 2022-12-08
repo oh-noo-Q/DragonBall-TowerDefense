@@ -1,2 +1,2 @@
-# DragonBall-TowerDefense
-DRAGON BALL
+# DragonBall-Tower
+One game based on Dragon Ball story.
