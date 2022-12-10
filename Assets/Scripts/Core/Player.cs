@@ -318,7 +318,7 @@ public class Player : MonoBehaviour
 
     IEnumerator DelayToInteract(IInteractableObject obj)
     {
-        yield return ExtensionClass.GetWaitForSeconds(0.5f);
+        yield return ExtensionClass.GetWaitForSeconds(1f);
         obj.InteractWithPlayer();
     }
 

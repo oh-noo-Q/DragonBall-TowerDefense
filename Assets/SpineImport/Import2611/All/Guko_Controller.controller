@@ -2287,6 +2287,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
+  - time: 0.5
+    functionName: FinalHit
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.51666665
     functionName: GetOnceHit
     data: 
@@ -2301,13 +2308,6 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
-  - time: 0.53333336
-    functionName: FinalHit
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.55
     functionName: finalhit
     data: 
@@ -2916,6 +2916,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.21666667
+    functionName: GetOnceHit
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.2333
     functionName: Punch01
     data: 
@@ -2930,7 +2937,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
-  - time: 0.23333333
+  - time: 0.28333333
     functionName: GetOnceHit
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -2938,13 +2945,20 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.3
+    functionName: Punch01
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 1
+  - time: 0.35
     functionName: GetOnceHit
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.3
+  - time: 0.36666667
     functionName: Punch01
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -2952,21 +2966,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 1
   - time: 0.36666667
-    functionName: GetOnceHit
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.3667
     functionName: hit
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 1
-  - time: 0.3667
-    functionName: Punch01
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -3001,14 +3001,14 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.5
-    functionName: finalhit
+    functionName: Punch01
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
   - time: 0.5
-    functionName: Punch01
+    functionName: finalhit
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
