@@ -24,4 +24,6 @@ public enum EventID
     KillEnemy,
     OnClickSkin,
     OnClickChangeModel,
+    OnSoundChangeValue,
+    OnMusicChangeValue,
 }
