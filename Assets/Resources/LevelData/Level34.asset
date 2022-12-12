@@ -18,12 +18,18 @@ MonoBehaviour:
     floors:
     - name: Floor 1
       gate: -1
+      interactableObjects: []
+  - name: Tower 2
+    floors:
+    - name: Floor 1
+      gate: -1
       interactableObjects:
       - typeStr: ENEMY
         type: 0
         ID: 17
         operation: 0
         value: 19
+        hideStrength: 0
     - name: Floor 2
       gate: -1
       interactableObjects:
@@ -32,11 +38,13 @@ MonoBehaviour:
         ID: 16
         operation: 0
         value: 31
-      - typeStr: ITEM
-        type: 2
-        ID: 4
+        hideStrength: 0
+      - typeStr: DragonBall
+        type: 3
+        ID: 6
         operation: 0
         value: 40
+        hideStrength: 0
     - name: Floor 3
       gate: -1
       interactableObjects:
@@ -45,11 +53,13 @@ MonoBehaviour:
         ID: 1
         operation: 0
         value: 5
+        hideStrength: 0
       - typeStr: ENEMY
         type: 0
         ID: 1
         operation: 0
         value: 200
+        hideStrength: 0
     - name: Floor 4
       gate: -1
       interactableObjects:
@@ -58,5 +68,6 @@ MonoBehaviour:
         ID: 18
         operation: 0
         value: 0
+        hideStrength: 0
   giantBossID: -1
   giantBossStrength: 100
