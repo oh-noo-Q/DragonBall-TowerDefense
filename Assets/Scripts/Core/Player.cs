@@ -123,6 +123,12 @@ public class Player : MonoBehaviour
         animator.SetInteger("Attack", 0);
     }
 
+    //Sound
+    public void Punch01()
+    {
+        SoundManager.instance.PlaySingle(SoundType.Punch);
+    }
+
     public void Fly()
     {
         animator.SetBool("Fly", true);
@@ -394,4 +400,5 @@ public class Player : MonoBehaviour
         collider.enabled = true;
         isDragged = false;
     }
+
 }
