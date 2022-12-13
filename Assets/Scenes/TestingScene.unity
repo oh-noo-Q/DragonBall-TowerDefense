@@ -3656,7 +3656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelData: {fileID: 0}
-  maxLevel: 22
+  maxLevel: 50
   mainCamera: {fileID: 2006677044}
   player: {fileID: 939203581}
   towerList: []
