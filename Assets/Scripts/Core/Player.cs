@@ -129,6 +129,16 @@ public class Player : MonoBehaviour
         SoundManager.instance.PlaySingle(SoundType.Punch);
     }
 
+    public void CritPunch()
+    {
+        SoundManager.instance.PlaySingle(SoundType.CritPunch);
+    }
+
+    public void CritDap()
+    {
+        SoundManager.instance.PlaySingle(SoundType.CritDap);
+    }
+
     public void Fly()
     {
         animator.SetBool("Fly", true);

@@ -10,6 +10,11 @@ public enum BossType
     Cadic,
     KingKong,
     Fize1,
+    Fize2,
+    Cell1,
+    Cell2,
+    MabuSlim,
+    MabuFat,
 }
 public class GiantBoss : Enemy
 {

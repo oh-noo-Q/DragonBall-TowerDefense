@@ -22,16 +22,16 @@ MonoBehaviour:
   - name: Tower 2
     floors:
     - name: Floor 1
-      gate: -1
+      gate: 0
       interactableObjects:
       - typeStr: ENEMY
         type: 0
-        ID: 1
+        ID: 2
         operation: 0
         value: 4
         hideStrength: 0
     - name: Floor 2
-      gate: -1
+      gate: 0
       interactableObjects:
       - typeStr: ENEMY
         type: 0
