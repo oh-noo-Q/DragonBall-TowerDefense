@@ -118,7 +118,8 @@ public class Floor : MonoBehaviour
 
     public bool IsRemainEnemy()
     {
-        List<IInteractableObject> remainEnemies = interactableObjects.FindAll(e => e.GetType() == typeof(Enemy));
+        List<IInteractableObject> remainEnemies = interactableObjects.FindAll(e => e.GetType() == typeof(Enemy) 
+                                                                            || e.GetType() == typeof(StickEnemy));
         return remainEnemies.Count == 0 ? false : true;
     }
 
