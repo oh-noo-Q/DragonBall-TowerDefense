@@ -13,6 +13,12 @@ public class Item : BaseOperationObject
     public override void InteractWithPlayer()
     {
         base.InteractWithPlayer();
+        switch (operation)
+        {
+            case Operation.ADD:
+                GameManager.Instance.Player.AddStrength(value);
+                break;
+        }
         this.PostEvent(EventID.OnPlayerInteract);
         Destroy(gameObject, 0.5f);
     }

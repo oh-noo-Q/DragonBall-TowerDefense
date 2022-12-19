@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] TextMeshPro poisonedText;
     [SerializeField] Animator animator;
 
-    private Collider2D collider;
+    [SerializeField] private Collider2D collider;
     private bool isDragged = false;
 
     [SerializeField] Weapon weapon;
@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        collider = (Collider2D)GetComponent(typeof(Collider2D));
+        collider = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         //currentFloor = transform.parent.GetComponent<Floor>();
         camera = GameManager.Instance.MainCamera;
@@ -107,10 +107,11 @@ public class Player : MonoBehaviour
 
     public void FinalHit()
     {
+        collider.enabled = true;
         if(attackAnim == 4 || attackAnim == 6 || attackAnim == 8)
             ((Enemy)currentObjInteract).GetDieAnim(2);
         else ((Enemy)currentObjInteract).GetDieAnim(1);
-
+        AddStrength(((BaseOperationObject)currentObjInteract).Value);
     }
 
     public void GetOnceHit()
@@ -138,11 +139,16 @@ public class Player : MonoBehaviour
     {
         SoundManager.instance.PlaySingle(SoundType.CritDap);
     }
+    public void Kame()
+    {
+
+    }
 
     public void Fly()
     {
         animator.SetBool("Fly", true);
     }
+
 
     public void StopFly()
     {
@@ -254,6 +260,7 @@ public class Player : MonoBehaviour
 
     void EndSlap()
     {
+        collider.enabled = true;
         transform.DOLocalMove(new Vector3(0, 0, 0), 0.3f);
     }
 
@@ -280,17 +287,17 @@ public class Player : MonoBehaviour
                     int objCount = currentFloor.InteractableObjects.Count;
                     if (objCount > 0)
                     {
+                        collider.enabled = false;
                         Poisoned();
                         IInteractableObject obj = currentFloor.InteractableObjects[0];
                         currentObjInteract = obj;
                         if(obj.transform.TryGetComponent<Trap>(out Trap trap))
                         {
-                            transform.DOMoveX(trap.transform.position.x, 0.3f);
+                            transform.DOMoveX(trap.transform.position.x - 0.5f, 0.3f);
                         }
                         else if (Vector3.Distance(obj.transform.position, transform.position) > 1)
                             transform.DOMoveX(obj.transform.position.x - 1.5f, 0.3f);
-                        currentFloor.InteractableObjects.Remove(obj);
-                        currentFloor.InteractedObjects.Add(obj);
+
                         StartCoroutine(DelayToInteract(obj));
                     }
                 }
@@ -336,6 +343,14 @@ public class Player : MonoBehaviour
     {
         yield return ExtensionClass.GetWaitForSeconds(1f);
         obj.InteractWithPlayer();
+        if (obj.transform.TryGetComponent<Enemy>(out Enemy enemy))
+        {
+            if (!enemy.IsWin)
+            {
+                currentFloor.InteractableObjects.Remove(obj);
+                currentFloor.InteractedObjects.Add(obj);
+            }
+        }
     }
 
     private void Poisoned()
@@ -407,7 +422,8 @@ public class Player : MonoBehaviour
         OnDrop();
         animator.SetBool("Down", true);
         animator.SetBool("Movie", false);
-        collider.enabled = true;
+        if(currentObjInteract == null) 
+            collider.enabled = true;
         isDragged = false;
     }
 

@@ -43,6 +43,8 @@ public class Enemy : BaseOperationObject
     protected bool attackable;
     protected Player player;
 
+    public bool IsWin => isWin;
+
     protected virtual void Awake()
     {
         animator = model.GetComponent<Animator>();

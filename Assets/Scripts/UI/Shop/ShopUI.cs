@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class ShopUI : MonoBehaviour
 {
     [SerializeField] Button backBtn;
+    [SerializeField] List<StatusTab> tabBtn;
+    [SerializeField] List<GameObject> panelItemShop;
     [SerializeField] Transform parentItem;
     [SerializeField] ItemShopUI itemPrefab;
     [SerializeField] SkeletonMecanim bigModel;
@@ -62,6 +64,25 @@ public class ShopUI : MonoBehaviour
                 }
                 else
                     item.InitItem(i, data.name, data.icon, unlocked, numberCoin, point, data.type);
+            }
+        }
+    }
+
+    public void OnClickSwitchTab(int i)
+    {
+        ClearShop(i);
+        tabBtn[i].SelectedTab();
+        panelItemShop[i].SetActive(true);
+    }
+
+    void ClearShop(int except)
+    {
+        for (int i = 0; i < tabBtn.Count; i++)
+        {
+            if (i != except)
+            {
+                tabBtn[i].UnselectTab();
+                panelItemShop[i].SetActive(false);
             }
         }
     }

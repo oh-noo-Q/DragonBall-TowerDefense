@@ -94,7 +94,6 @@ public class BaseOperationObject : IInteractableObject
         switch (operation)
         {
             case Operation.ADD:
-                player.AddStrength(value);
                 break;
             case Operation.SUBSTRACT:
                 if (value >= player.Strength) player.Die();
