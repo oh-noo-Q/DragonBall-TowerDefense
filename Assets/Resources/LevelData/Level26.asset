@@ -124,8 +124,8 @@ MonoBehaviour:
       - typeStr: TRAP
         type: 1
         ID: 2
-        operation: 0
-        value: 50
+        operation: 1
+        value: 158
         hideStrength: 0
     - name: Floor 2
       gate: -1
@@ -133,13 +133,13 @@ MonoBehaviour:
       - typeStr: TRAP
         type: 1
         ID: 2
-        operation: 0
+        operation: 1
         value: 30
         hideStrength: 0
       - typeStr: TRAP
         type: 1
         ID: 1
-        operation: 0
+        operation: 1
         value: 50
         hideStrength: 0
       - typeStr: ENEMY
@@ -182,7 +182,7 @@ MonoBehaviour:
         ID: 3
         operation: 0
         value: 100
-        hideStrength: 0
+        hideStrength: 1
     - name: Floor 2
       gate: -1
       interactableObjects:
@@ -199,20 +199,20 @@ MonoBehaviour:
         type: 1
         ID: 1
         operation: 0
-        value: 325
-        hideStrength: 0
+        value: 25
+        hideStrength: 1
       - typeStr: TRAP
         type: 1
         ID: 2
         operation: 0
-        value: 410
-        hideStrength: 0
+        value: 610
+        hideStrength: 1
       - typeStr: ENEMY
         type: 0
         ID: 12
         operation: 0
-        value: 2000
-        hideStrength: 0
+        value: 1989
+        hideStrength: 1
     - name: Floor 4
       gate: -1
       interactableObjects:

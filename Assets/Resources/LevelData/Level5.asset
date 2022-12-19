@@ -24,17 +24,11 @@ MonoBehaviour:
     - name: Floor 1
       gate: 0
       interactableObjects:
-      - typeStr: ITEM
-        type: 2
-        ID: 0
-        operation: 4
-        value: 0
-        hideStrength: 0
       - typeStr: ENEMY
         type: 0
         ID: 2
         operation: 0
-        value: 7
+        value: 5
         hideStrength: 0
     - name: Floor 2
       gate: 0
@@ -43,13 +37,13 @@ MonoBehaviour:
         type: 1
         ID: 1
         operation: 1
-        value: 20
+        value: 9
         hideStrength: 0
       - typeStr: ENEMY
         type: 0
         ID: 5
         operation: 0
-        value: 20
+        value: 21
         hideStrength: 0
     - name: Floor 3
       gate: 0

@@ -28,7 +28,7 @@ MonoBehaviour:
         type: 0
         ID: 2
         operation: 0
-        value: 22
+        value: 23
         hideStrength: 0
     - name: Floor 2
       gate: -1
@@ -46,13 +46,13 @@ MonoBehaviour:
         type: 1
         ID: 1
         operation: 1
-        value: 30
+        value: 21
         hideStrength: 0
       - typeStr: DragonBall
         type: 3
-        ID: 6
+        ID: 0
         operation: 0
-        value: 100
+        value: 71
         hideStrength: 0
     - name: Floor 4
       gate: -1
@@ -61,7 +61,7 @@ MonoBehaviour:
         type: 0
         ID: 5
         operation: 0
-        value: 110
+        value: 109
         hideStrength: 0
   giantBossID: -1
   giantBossStrength: 100

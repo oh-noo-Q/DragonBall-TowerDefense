@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -646,7 +646,7 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &247759546
 PrefabInstance:
@@ -3453,7 +3453,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Item
+  m_Text: ITEM
 --- !u!222 &1430527955
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4082,7 +4082,7 @@ Transform:
   - {fileID: 1864309188}
   - {fileID: 2053589475}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1864309187
 GameObject:
@@ -5253,7 +5253,7 @@ Transform:
   - {fileID: 9028753404808135604}
   - {fileID: 6442393874320410598}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3064538707952244208
 MonoBehaviour:
@@ -7307,7 +7307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8247608677173923446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7346,7 +7346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618313645184649322, guid: 3efa73bf8d4c1d5439a4e9f84abc4f68, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.82589376
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8618313645789994476, guid: 3efa73bf8d4c1d5439a4e9f84abc4f68, type: 3}
       propertyPath: m_RootOrder

@@ -80,6 +80,12 @@ MonoBehaviour:
         operation: 0
         value: 211
         hideStrength: 0
+      - typeStr: ENEMY
+        type: 0
+        ID: 15
+        operation: 0
+        value: 79
+        hideStrength: 0
     - name: Floor 2
       gate: -1
       interactableObjects:

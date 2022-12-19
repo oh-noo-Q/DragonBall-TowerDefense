@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b06828fdb61be4996e473f8e6c7b74, type: 3}
   m_Name: Level19
   m_EditorClassIdentifier: 
-  playerStrength: 5
+  playerStrength: 51
   Towers:
   - name: Tower 1
     floors:
@@ -29,7 +29,7 @@ MonoBehaviour:
         ID: 1
         operation: 0
         value: 1
-        hideStrength: 0
+        hideStrength: 1
       - typeStr: ITEM
         type: 2
         ID: 1
@@ -44,7 +44,7 @@ MonoBehaviour:
         ID: 1
         operation: 0
         value: 1
-        hideStrength: 0
+        hideStrength: 1
       - typeStr: ITEM
         type: 2
         ID: 2
@@ -59,7 +59,7 @@ MonoBehaviour:
         ID: 1
         operation: 0
         value: 1
-        hideStrength: 0
+        hideStrength: 1
       - typeStr: ITEM
         type: 2
         ID: 3
@@ -74,9 +74,9 @@ MonoBehaviour:
         ID: 1
         operation: 0
         value: 1
-        hideStrength: 0
-      - typeStr: DragonBall
-        type: 3
+        hideStrength: 1
+      - typeStr: ITEM
+        type: 2
         ID: 2
         operation: 0
         value: 0

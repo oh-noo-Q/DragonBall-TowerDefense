@@ -44,7 +44,7 @@ MonoBehaviour:
       interactableObjects:
       - typeStr: DragonBall
         type: 3
-        ID: 3
+        ID: 2
         operation: 0
         value: 10
         hideStrength: 0

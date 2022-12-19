@@ -41,7 +41,7 @@ MonoBehaviour:
         hideStrength: 0
       - typeStr: DragonBall
         type: 3
-        ID: 0
+        ID: 6
         operation: 2
         value: 2
         hideStrength: 0
@@ -55,4 +55,4 @@ MonoBehaviour:
         value: 99
         hideStrength: 0
   giantBossID: 6
-  giantBossStrength: 200
+  giantBossStrength: 231

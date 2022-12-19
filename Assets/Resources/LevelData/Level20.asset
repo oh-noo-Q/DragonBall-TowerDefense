@@ -46,11 +46,17 @@ MonoBehaviour:
         type: 0
         ID: 1
         operation: 0
-        value: 85
+        value: 49
         hideStrength: 0
     - name: Floor 4
       gate: -1
       interactableObjects:
+      - typeStr: TRAP
+        type: 1
+        ID: 1
+        operation: 1
+        value: 29
+        hideStrength: 0
       - typeStr: ENEMY
         type: 0
         ID: 11

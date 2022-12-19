@@ -45,6 +45,12 @@ MonoBehaviour:
         operation: 4
         value: 0
         hideStrength: 0
+      - typeStr: ENEMY
+        type: 0
+        ID: 7
+        operation: 4
+        value: 29
+        hideStrength: 1
     - name: Floor 3
       gate: -1
       interactableObjects:
@@ -61,7 +67,7 @@ MonoBehaviour:
         type: 0
         ID: 8
         operation: 0
-        value: 65
+        value: 75
         hideStrength: 1
   giantBossID: -1
   giantBossStrength: 100

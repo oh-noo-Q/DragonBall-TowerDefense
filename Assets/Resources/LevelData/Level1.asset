@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52b06828fdb61be4996e473f8e6c7b74, type: 3}
-  m_Name: Level1
+  m_Name: level1
   m_EditorClassIdentifier: 
   playerStrength: 9
   Towers:
@@ -22,16 +22,16 @@ MonoBehaviour:
   - name: Tower 2
     floors:
     - name: Floor 1
-      gate: 0
+      gate: -1
       interactableObjects:
       - typeStr: ENEMY
         type: 0
-        ID: 2
+        ID: 1
         operation: 0
         value: 4
         hideStrength: 0
     - name: Floor 2
-      gate: 0
+      gate: -1
       interactableObjects:
       - typeStr: ENEMY
         type: 0

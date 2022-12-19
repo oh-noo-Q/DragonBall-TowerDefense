@@ -64,4 +64,4 @@ MonoBehaviour:
         value: 120
         hideStrength: 0
   giantBossID: 4
-  giantBossStrength: 250
+  giantBossStrength: 248

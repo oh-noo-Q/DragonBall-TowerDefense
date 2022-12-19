@@ -26,7 +26,7 @@ MonoBehaviour:
       interactableObjects:
       - typeStr: DragonBall
         type: 3
-        ID: 3
+        ID: 4
         operation: 0
         value: 7
         hideStrength: 0
@@ -65,6 +65,12 @@ MonoBehaviour:
         operation: 0
         value: 22
         hideStrength: 0
+      - typeStr: TRAP
+        type: 1
+        ID: 1
+        operation: 1
+        value: 49
+        hideStrength: 0
     - name: Floor 2
       gate: -1
       interactableObjects:
@@ -72,7 +78,13 @@ MonoBehaviour:
         type: 0
         ID: 11
         operation: 0
-        value: 101
+        value: 103
+        hideStrength: 0
+      - typeStr: ITEM
+        type: 2
+        ID: 2
+        operation: 0
+        value: 0
         hideStrength: 0
     - name: Floor 3
       gate: -1
