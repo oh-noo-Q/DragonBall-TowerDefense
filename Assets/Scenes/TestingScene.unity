@@ -788,6 +788,7 @@ MonoBehaviour:
   strengthText: {fileID: 1372909774}
   poisonedText: {fileID: 1224035772}
   animator: {fileID: 319368902}
+  collider: {fileID: 0}
   weapon: {fileID: 0}
   maxPosionedTime: 4
   poison: {fileID: 0}
@@ -6921,7 +6922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2040984837895761399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7165,6 +7166,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1849651671}
     m_Modifications:
+    - target: {fileID: 3231061620240683265, guid: bfff6db2b6c5f8447b8fada549f06a13, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3231061620240683267, guid: bfff6db2b6c5f8447b8fada549f06a13, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8826,6 +8831,7 @@ MonoBehaviour:
   strengthText: {fileID: 6928829872948231820}
   poisonedText: {fileID: 6928829872719538482}
   animator: {fileID: 6928829874247431325}
+  collider: {fileID: 0}
   weapon: {fileID: 0}
   maxPosionedTime: 4
   poison: {fileID: 0}
@@ -9211,7 +9217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8247608677173923446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9536,7 +9542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618313645184649322, guid: 3efa73bf8d4c1d5439a4e9f84abc4f68, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.8258407
       objectReference: {fileID: 0}
     - target: {fileID: 8618313645789994476, guid: 3efa73bf8d4c1d5439a4e9f84abc4f68, type: 3}
       propertyPath: m_RootOrder
