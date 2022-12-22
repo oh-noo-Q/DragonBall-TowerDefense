@@ -19,6 +19,7 @@ public class Item : BaseOperationObject
                 GameManager.Instance.Player.AddStrength(value);
                 break;
         }
+        GameManager.Instance.Player.ActiveCollider();
         this.PostEvent(EventID.OnPlayerInteract);
         Destroy(gameObject, 0.5f);
     }

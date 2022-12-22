@@ -66,6 +66,8 @@ public class ShopUI : MonoBehaviour
                     item.InitItem(i, data.name, data.icon, unlocked, numberCoin, point, data.type);
             }
         }
+
+        OnClickSwitchTab(0);
     }
 
     public void OnClickSwitchTab(int i)

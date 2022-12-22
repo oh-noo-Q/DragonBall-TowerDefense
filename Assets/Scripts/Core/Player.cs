@@ -114,6 +114,11 @@ public class Player : MonoBehaviour
         AddStrength(((BaseOperationObject)currentObjInteract).Value);
     }
 
+    public void ActiveCollider()
+    {
+        collider.enabled = true;
+    }
+
     public void GetOnceHit()
     {
         ((Enemy)currentObjInteract).GetOnceHit();
