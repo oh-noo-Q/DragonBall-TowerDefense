@@ -138,4 +138,5 @@ public class ShopUI : MonoBehaviour
         model.skeleton.SetToSetupPose();
         model.skeleton.UpdateWorldTransform();
     }
+
 }

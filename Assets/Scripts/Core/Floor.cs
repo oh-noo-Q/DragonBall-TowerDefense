@@ -145,25 +145,25 @@ public class Floor : MonoBehaviour
         return (sprite.bounds.size.y) * transform.localScale.x;
     }
 
-    public void OnHover()
+    public virtual void OnHover()
     {
         hoverEffect.SetActive(true);
         availableEffect.SetActive(false);
     }
 
-    public void OnUnhover()
+    public virtual void OnUnhover()
     {
         hoverEffect.SetActive(false);
         availableEffect.SetActive(true);
     }
 
-    public void OnPlayerDrop(object param = null)
+    public virtual void OnPlayerDrop(object param = null)
     {
         hoverEffect.SetActive(false);
         availableEffect.SetActive(false);
     }
 
-    public void OnPlayerDrag(object param = null)
+    public virtual void OnPlayerDrag(object param = null)
     {
         availableEffect.SetActive(collider.enabled);
     }

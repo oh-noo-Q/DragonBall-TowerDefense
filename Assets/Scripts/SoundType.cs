@@ -9,5 +9,5 @@ public enum SoundType
     CritDap,
     CritPunch,
     Block,
-
+    Kame,
 }

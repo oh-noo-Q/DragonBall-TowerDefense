@@ -10,10 +10,10 @@ public class ItemShopUI : MonoBehaviour
     public GameObject border;
     public Text numberUnlockTxt;
     public Text pointTxt;
+    [SerializeField] int numberCoinUnlock;
 
     int idCharacter;
     string nameSkin;
-    int numberCoinUnlock;
     int valuePoint;
     TypeCharacter typeCharacter;
     private void Awake()
@@ -67,5 +67,46 @@ public class ItemShopUI : MonoBehaviour
             UserData.AddValueCharacter(idCharacter, valuePoint);
             EventDispatcher.Instance.PostEvent(EventID.OnClickSkin, nameSkin);
         }
+    }
+
+    public void OnClickBuyDragonBall(int index)
+    {
+        if(UserData.CurrentCoin > Constant.BALL_SHOP_COST)
+        {
+            UserData.CurrentCoin -= Constant.BALL_SHOP_COST;
+            UserData.AddDragonBall(index);
+        }
+        else
+        {
+
+        }
+    }
+
+    public void OnClickBuyItem(int id)
+    {
+        if (UserData.CurrentCoin > Constant.ITEM_SHOP_COST)
+        {
+            UserData.CurrentCoin -= Constant.ITEM_SHOP_COST;
+            switch(id)
+            {
+                case 1:
+                    UserData.NumberPeanut++;
+                    break;
+                case 2:
+                    UserData.NumberRada++;
+                    break;
+                case 3:
+                    break;
+            }
+        }
+        else
+        {
+
+        }
+    }
+
+    public void ChooseItemSupport()
+    {
+        border.SetActive(true);
     }
 }

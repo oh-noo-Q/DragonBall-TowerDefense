@@ -18,6 +18,7 @@ public class Girl : BaseOperationObject
     {
         base.InteractWithPlayer();
         UserData.CurrentCoin += 10;
+        GameManager.Instance.Player.CollectCoin();
         GameManager.Instance.Player.Slap();
         Dance();
         Destroy(gameObject, 1f);

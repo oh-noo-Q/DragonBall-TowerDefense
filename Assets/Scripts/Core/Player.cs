@@ -38,6 +38,8 @@ public class Player : MonoBehaviour
     public IInteractableObject currentObjInteract;
     int dieEnemyAnim = 1;
 
+    public Transform coinTrans;
+
     public TextMeshPro StrengthText => strengthText;
     public bool IsDragged => isDragged;
     public Weapon Weapon
@@ -146,7 +148,8 @@ public class Player : MonoBehaviour
     }
     public void Kame()
     {
-
+        SoundManager.instance.PlaySingle(SoundType.Kame);
+        EventDispatcher.Instance.PostEvent(EventID.Shaking, null);
     }
 
     public void Fly()
@@ -340,6 +343,7 @@ public class Player : MonoBehaviour
             yield return null;
         }
         UserData.CurrentCoin += 5;
+        CollectCoin();
         timeToEarn = 0;
         earnCoinCor = StartCoroutine(StartEarnCoin());
     }
@@ -432,4 +436,17 @@ public class Player : MonoBehaviour
         isDragged = false;
     }
 
+    public void CollectCoin()
+    {
+        coinTrans.gameObject.SetActive(true);
+        Vector3 oldPos = coinTrans.position;
+
+        coinTrans.DOMoveY(coinTrans.position.y + 1f, 0.5f).OnComplete(() =>
+        {
+            coinTrans.gameObject.SetActive(false);
+            coinTrans.position = oldPos;
+        });
+        coinTrans.DORotate(new Vector3(0, 360, 0) , 0.5f, RotateMode.Fast).SetLoops(-1);
+
+    }
 }

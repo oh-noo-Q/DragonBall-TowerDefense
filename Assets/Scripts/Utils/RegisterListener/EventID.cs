@@ -26,4 +26,5 @@ public enum EventID
     OnClickChangeModel,
     OnSoundChangeValue,
     OnMusicChangeValue,
+    Shaking,
 }
