@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff44edf2ca413345b829c7dd5d43183, type: 3}
+  m_Name: Bulma_2
+  m_EditorClassIdentifier: 
+  name: Bulma_2
+  icon: {fileID: 21300000, guid: aa991ad9302bda04c9887a91d9e45f7a, type: 3}
+  rank: 2
+  type: 1

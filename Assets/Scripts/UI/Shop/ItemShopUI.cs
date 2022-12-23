@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ItemShopUI : MonoBehaviour
 {
     public Image iconImg;
-    public Button unlockBtn, equipBtn, itemBtn;
+    public Button unlockBtn, equipBtn, itemBtn, removeBtn;
     public GameObject border;
     public Text numberUnlockTxt;
     public Text pointTxt;
@@ -21,7 +21,17 @@ public class ItemShopUI : MonoBehaviour
         unlockBtn.onClick.AddListener(OnClickUnlock);
         itemBtn.onClick.AddListener(OnClickChoose);
         equipBtn.onClick.AddListener(OnClickUse);
+        removeBtn.onClick.AddListener(OnClickRemove);
     }
+
+    private void OnDestroy()
+    {
+        unlockBtn.onClick.RemoveListener(OnClickUnlock);
+        itemBtn.onClick.RemoveListener(OnClickChoose);
+        equipBtn.onClick.RemoveListener(OnClickUse);
+        removeBtn.onClick.RemoveListener(OnClickRemove);
+    }
+
     public void InitItem(int id, string name, Sprite icon, bool unlocked, int numberCoin, int point, TypeCharacter type)
     {
         iconImg.sprite = icon;
@@ -57,6 +67,9 @@ public class ItemShopUI : MonoBehaviour
     void OnClickUse()
     {
         border.SetActive(true);
+        UserData.CurrentCharacter = idCharacter;
+        OnClickChoose();
+        EventDispatcher.Instance.PostEvent(EventID.SetItemShop, this);
     }
 
     void OnClickUnlock()
@@ -65,8 +78,13 @@ public class ItemShopUI : MonoBehaviour
         {
             UserData.CurrentCoin -= numberCoinUnlock;
             UserData.AddValueCharacter(idCharacter, valuePoint);
-            EventDispatcher.Instance.PostEvent(EventID.OnClickSkin, nameSkin);
+            OnClickUse();
         }
+    }
+
+    void OnClickRemove()
+    {
+
     }
 
     public void OnClickBuyDragonBall(int index)
@@ -109,4 +127,10 @@ public class ItemShopUI : MonoBehaviour
     {
         border.SetActive(true);
     }
-}
+
+    public void Unuse()
+    {
+        equipBtn.gameObject.SetActive(true);
+        border.SetActive(false);
+    }
+} 

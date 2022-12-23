@@ -12,6 +12,7 @@ public static class UserData
     private const string NUMBER_PEANUT_PREFS = "number_peanut";
     private const string DRAGON_BALL_PREFS = "dragon_ball";
     private const string CHARACTER_MERGE_PREFS = "character_merge";
+    private const string CURRENT_CHARACTER = "current_character";
 
     public static int CurrentLevel
     {
@@ -140,5 +141,11 @@ public static class UserData
         List<int> character = CharacterMerge;
         character[index] = value;
         CharacterMerge = character;
+    }
+
+    public static int CurrentCharacter
+    {
+        get => PlayerPrefs.GetInt(CURRENT_CHARACTER, 0);
+        set => PlayerPrefs.SetInt(CURRENT_CHARACTER, value);
     }
 }

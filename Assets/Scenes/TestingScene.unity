@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: e0c484f95c210bc46baa650158e090cc, type: 2}
-  initialSkinName: Goten
+  initialSkinName: Cellcon
   initialFlipX: 0
   initialFlipY: 0
   updateWhenInvisible: 3
@@ -2532,7 +2532,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3502,6 +3502,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 258207369}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 684303946}
+  removeBtn: {fileID: 0}
   border: {fileID: 1441126017}
   numberUnlockTxt: {fileID: 407142624}
   pointTxt: {fileID: 0}
@@ -3910,6 +3911,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 466319698}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 812650586}
+  removeBtn: {fileID: 0}
   border: {fileID: 561283965}
   numberUnlockTxt: {fileID: 139010542}
   pointTxt: {fileID: 0}
@@ -4080,6 +4082,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 60273670}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 855570362}
+  removeBtn: {fileID: 0}
   border: {fileID: 1045611952}
   numberUnlockTxt: {fileID: 1364004194}
   pointTxt: {fileID: 0}
@@ -4854,6 +4857,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 1541813540}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 1095924570}
+  removeBtn: {fileID: 0}
   border: {fileID: 385735888}
   numberUnlockTxt: {fileID: 1612421385}
   pointTxt: {fileID: 0}
@@ -5767,6 +5771,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 1304746971}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 1249832387}
+  removeBtn: {fileID: 0}
   border: {fileID: 902323889}
   numberUnlockTxt: {fileID: 1751605424}
   pointTxt: {fileID: 0}
@@ -7885,12 +7890,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2061120716}
         m_TargetAssemblyTypeName: ItemShopUI, Assembly-CSharp
-        m_MethodName: OnClickBuyItem
+        m_MethodName: OnClickBuyDragonBall
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8311,6 +8316,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 1928655444}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 1838419106}
+  removeBtn: {fileID: 0}
   border: {fileID: 1387344088}
   numberUnlockTxt: {fileID: 1685897740}
   pointTxt: {fileID: 0}
@@ -9412,6 +9418,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 1695346093}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 2061120717}
+  removeBtn: {fileID: 0}
   border: {fileID: 1686177928}
   numberUnlockTxt: {fileID: 274466167}
   pointTxt: {fileID: 0}
@@ -9781,6 +9788,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 621467814}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 2147346364}
+  removeBtn: {fileID: 0}
   border: {fileID: 756014745}
   numberUnlockTxt: {fileID: 630792324}
   pointTxt: {fileID: 0}
@@ -10000,6 +10008,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 8601789095939915802}
   equipBtn: {fileID: 0}
   itemBtn: {fileID: 8881117294334532165}
+  removeBtn: {fileID: 0}
   border: {fileID: 2034898527775931713}
   numberUnlockTxt: {fileID: 8601789095232779508}
   pointTxt: {fileID: 0}
@@ -10283,10 +10292,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Content: {fileID: 0}
+  m_Content: {fileID: 918360238}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -10468,7 +10477,7 @@ RectTransform:
   m_Father: {fileID: 1745669755582019525}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.21290487}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -10622,8 +10631,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1745669755888586947}
   m_HandleRect: {fileID: 1745669755888586946}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.7870951
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12628,7 +12637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: 0a34b60ee360ce14783a249d7495de2a, type: 2}
-  initialSkinName: Goku copy
+  initialSkinName: Radit
   initialFlipX: 0
   initialFlipY: 0
   updateWhenInvisible: 3
@@ -13302,7 +13311,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618313645184649322, guid: 3efa73bf8d4c1d5439a4e9f84abc4f68, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.8258407
+      value: 0.8303448
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618313645216497324, guid: 3efa73bf8d4c1d5439a4e9f84abc4f68, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 5800
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618313645216497324, guid: 3efa73bf8d4c1d5439a4e9f84abc4f68, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2900
       objectReference: {fileID: 0}
     - target: {fileID: 8618313645789994476, guid: 3efa73bf8d4c1d5439a4e9f84abc4f68, type: 3}
       propertyPath: m_RootOrder

@@ -20,6 +20,7 @@ public enum Character
     N19,
     DrGero,
     Babidi,
+    Chichi,
     Kirilin,
     N16,
     N17,
@@ -29,8 +30,20 @@ public enum Character
     Goten,
     Cadic,
     Picolo,
+    Dabra,
+    Frizea1,
+    Trunks,
+    Cell,
+    SuperBulma,
     SuperPicolo,
     SuperGoku,
+    SuperCadic,
+    Frizea2,
+    SuperCell,
+    Mabu,
+    Mabubeo,
+    Beerus,
+    Broly,
 }
 
 public enum TypeCharacter

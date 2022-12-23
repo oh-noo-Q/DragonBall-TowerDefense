@@ -15,18 +15,21 @@ public class ShopUI : MonoBehaviour
     [SerializeField] SkeletonMecanim smallModel;
 
     List<ItemShopUI> items = new List<ItemShopUI>();
+    ItemShopUI currentItem;
 
     private void Awake()
     {
         backBtn.onClick.AddListener(OnMainMenuClicked);
         EventDispatcher.Instance.RegisterListener(EventID.OnClickSkin, SetSkinModel);
         EventDispatcher.Instance.RegisterListener(EventID.OnClickChangeModel, ChangeModel);
+        EventDispatcher.Instance.RemoveListener(EventID.SetItemShop, SetItemShop);
     }
 
     private void OnDestroy()
     {
         EventDispatcher.Instance.RemoveListener(EventID.OnClickSkin, SetSkinModel);
         EventDispatcher.Instance.RemoveListener(EventID.OnClickChangeModel, ChangeModel);
+        EventDispatcher.Instance.RemoveListener(EventID.SetItemShop, SetItemShop);
     }
 
     private void OnEnable()
@@ -139,4 +142,9 @@ public class ShopUI : MonoBehaviour
         model.skeleton.UpdateWorldTransform();
     }
 
+    void SetItemShop(object obj)
+    {
+        currentItem.Unuse();
+        currentItem = (ItemShopUI)obj;
+    }
 }
