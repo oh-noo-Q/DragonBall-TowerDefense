@@ -655,6 +655,7 @@ MonoBehaviour:
   unlockBtn: {fileID: 4528579213140584310}
   equipBtn: {fileID: 4022477105536069671}
   itemBtn: {fileID: 3658926717659446569}
+  removeBtn: {fileID: 7414741418291806943}
   border: {fileID: 6177362243524041261}
   numberUnlockTxt: {fileID: 4528579214576194456}
   pointTxt: {fileID: 8893471233289118204}

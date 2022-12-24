@@ -20,23 +20,25 @@ public class ShopUI : MonoBehaviour
     private void Awake()
     {
         backBtn.onClick.AddListener(OnMainMenuClicked);
-        EventDispatcher.Instance.RegisterListener(EventID.OnClickSkin, SetSkinModel);
-        EventDispatcher.Instance.RegisterListener(EventID.OnClickChangeModel, ChangeModel);
-        EventDispatcher.Instance.RemoveListener(EventID.SetItemShop, SetItemShop);
+        //EventDispatcher.Instance.RegisterListener(EventID.OnClickSkin, SetSkinModel);
+        //EventDispatcher.Instance.RegisterListener(EventID.OnClickChangeModel, ChangeModel);
+        EventDispatcher.Instance.RegisterListener(EventID.SetItemShop, SetItemShop);
+        EventDispatcher.Instance.RegisterListener(EventID.SetDefaultItem, SetDefaultItem);
     }
 
     private void OnDestroy()
     {
-        EventDispatcher.Instance.RemoveListener(EventID.OnClickSkin, SetSkinModel);
-        EventDispatcher.Instance.RemoveListener(EventID.OnClickChangeModel, ChangeModel);
+        //EventDispatcher.Instance.RemoveListener(EventID.OnClickSkin, SetSkinModel);
+        //EventDispatcher.Instance.RemoveListener(EventID.OnClickChangeModel, ChangeModel);
         EventDispatcher.Instance.RemoveListener(EventID.SetItemShop, SetItemShop);
+        EventDispatcher.Instance.RemoveListener(EventID.SetDefaultItem, SetDefaultItem);
     }
 
     private void OnEnable()
     {
+        CharacterDictionary characterDic = CharacterManagerDataSO.Instance.characterDic;
         if(items.Count <= 0)
         {
-            CharacterDictionary characterDic = CharacterManagerDataSO.Instance.characterDic;
             for (int i = 0; i < characterDic.Count; i++)
             {
                 CharacterDataSO data = characterDic[(Character)i];
@@ -63,7 +65,6 @@ public class ShopUI : MonoBehaviour
                 if (i == 0)
                 {
                     item.InitItem(i, data.name, data.icon, true, 0, 0, data.type);
-                    SetSkinModel(data.name);
                 }
                 else
                     item.InitItem(i, data.name, data.icon, unlocked, numberCoin, point, data.type);
@@ -71,6 +72,8 @@ public class ShopUI : MonoBehaviour
         }
 
         OnClickSwitchTab(0);
+        currentItem = items[UserData.CurrentCharacter];
+        currentItem.ActiveItem();
     }
 
     public void OnClickSwitchTab(int i)
@@ -111,49 +114,16 @@ public class ShopUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void ChangeModel(object type)
-    {
-        if((TypeCharacter)type == TypeCharacter.Small)
-        {
-            smallModel.gameObject.SetActive(true);
-            bigModel.gameObject.SetActive(false);
-        }
-        else
-        {
-            smallModel.gameObject.SetActive(false);
-            bigModel.gameObject.SetActive(true);
-        }
-    }
-
-    public void SetSkinModel(object name)
-    {
-        if (bigModel.gameObject.activeInHierarchy)
-            SetSkin(bigModel, (string)name);
-
-        else SetSkin(smallModel, (string)name);
-    }
-
-    void SetSkin(SkeletonMecanim model, string name)
-    {
-        model.Skeleton.SetSkin(name);
-        model.Skeleton.UpdateCache();
-        model.skeleton.SetSlotsToSetupPose();
-        model.skeleton.SetToSetupPose();
-        model.skeleton.UpdateWorldTransform();
-    }
-
     void SetItemShop(object obj)
     {
         currentItem.Unuse();
         currentItem = (ItemShopUI)obj;
     }
 
-    void ResetDefaultItem()
+    void SetDefaultItem(object obj)
     {
         currentItem.Unuse();
         currentItem = items[0];
-        items[0].border.SetActive(true);
-        UserData.CurrentCharacter = 0;
-
+        items[0].ActiveItem();
     }
 }

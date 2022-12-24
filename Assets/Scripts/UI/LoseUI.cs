@@ -35,7 +35,7 @@ public class LoseUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             UIManager.Instance.ShowMainMenuUI();
-        });
+        }, 1f);
     }
 
     private void OnTryAgainClicked()
@@ -45,7 +45,7 @@ public class LoseUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             this.PostEvent(EventID.OnLoadLevel);
-        },
+        }, 2f, 
         () => {
             GameManager.Instance.GameIntro();
         });
@@ -59,7 +59,7 @@ public class LoseUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             this.PostEvent(EventID.OnLoadLevel);
-        },
+        }, 2f,
         () => {
             GameManager.Instance.GameIntro();
         });

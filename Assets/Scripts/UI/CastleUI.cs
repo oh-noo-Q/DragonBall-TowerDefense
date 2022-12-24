@@ -19,7 +19,7 @@ public class CastleUI : MonoBehaviour
             Hide();
             GameManager.Instance.ReturnMainMenu();
             UIManager.Instance.ShowMainMenuUI();
-        });
+        }, 1f);
     }
 
     public void Show()

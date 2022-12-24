@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Enemy giantBoss;
     [SerializeField] Princess princess;
     [SerializeField] CastleController castle;
+    [SerializeField] ShopController shop;
 
     [SerializeField] Tower towerPrefab;
 
@@ -29,6 +30,11 @@ public class GameManager : MonoBehaviour
     public GameMode GameMode {
         get => gameMode;
         set => gameMode = value;
+    }
+
+    public void SetMainPlayer(Player main)
+    {
+        player = main;
     }
 
     public Tower CurrentMainTower
@@ -323,11 +329,14 @@ public class GameManager : MonoBehaviour
     {
         UIManager.Instance.ShowShopUI();
         mainCamera.transform.localPosition = new Vector3(-64f, -10f, 0);
+        player.ShowStrength(false);
+        shop.JoinShop();
     }
 
     public void HideShop()
     {
         mainCamera.transform.localPosition = Vector3.zero;
+        player.ShowStrength(false);
     }
 }
 

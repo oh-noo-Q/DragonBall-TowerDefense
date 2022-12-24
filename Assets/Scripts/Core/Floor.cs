@@ -19,8 +19,11 @@ public class Floor : MonoBehaviour
     [SerializeField] private GameObject hoverEffect;
     [SerializeField] private GameObject availableEffect;
 
+    [SerializeField] bool haveEarn;
+
     private Collider2D collider;
 
+    public bool HaveEarn => haveEarn;
     public SpriteRenderer Sprite => sprite;
     public Transform PlayerSpawnPosition => playerSpawnPosition;
     public List<IInteractableObject> InteractedObjects => interactedObjects;

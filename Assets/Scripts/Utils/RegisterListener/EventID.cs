@@ -28,4 +28,5 @@ public enum EventID
     OnMusicChangeValue,
     Shaking,
     SetItemShop,
+    SetDefaultItem,
 }

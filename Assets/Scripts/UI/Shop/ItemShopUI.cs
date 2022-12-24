@@ -16,22 +16,31 @@ public class ItemShopUI : MonoBehaviour
     string nameSkin;
     int valuePoint;
     TypeCharacter typeCharacter;
+
+    public string NameSkin => nameSkin;
+    public TypeCharacter TypeCharacter => typeCharacter;
+
     private void Awake()
     {
-        unlockBtn.onClick.AddListener(OnClickUnlock);
-        itemBtn.onClick.AddListener(OnClickChoose);
-        equipBtn.onClick.AddListener(OnClickUse);
-        removeBtn.onClick.AddListener(OnClickRemove);
+        if(unlockBtn != null) InitButton(unlockBtn, OnClickUnlock);
+        if (itemBtn != null) itemBtn.onClick.AddListener(OnClickChoose);
+        if (equipBtn != null) InitButton(equipBtn, OnClickUse);
+        if (removeBtn != null) InitButton(removeBtn, OnClickRemove);
     }
 
     private void OnDestroy()
     {
-        unlockBtn.onClick.RemoveListener(OnClickUnlock);
-        itemBtn.onClick.RemoveListener(OnClickChoose);
-        equipBtn.onClick.RemoveListener(OnClickUse);
-        removeBtn.onClick.RemoveListener(OnClickRemove);
+        if (unlockBtn != null) unlockBtn.onClick.RemoveListener(OnClickUnlock);
+        if (itemBtn != null) itemBtn.onClick.RemoveListener(OnClickChoose);
+        if (equipBtn != null) equipBtn.onClick.RemoveListener(OnClickUse);
+        if (removeBtn != null) removeBtn.onClick.RemoveListener(OnClickRemove);
     }
 
+    void InitButton(Button btn, UnityEngine.Events.UnityAction action)
+    {
+        btn.onClick.AddListener(action);
+        btn.gameObject.AddComponent<ButtonAnimation>();
+    }
     public void InitItem(int id, string name, Sprite icon, bool unlocked, int numberCoin, int point, TypeCharacter type)
     {
         iconImg.sprite = icon;
@@ -64,32 +73,48 @@ public class ItemShopUI : MonoBehaviour
         EventDispatcher.Instance.PostEvent(EventID.OnClickSkin, nameSkin);
     }
 
-    public void OnClickUse()
+    void OnClickUse()
+    {
+        EventDispatcher.Instance.PostEvent(EventID.SetItemShop, this);
+        ActiveItem();
+    }
+
+    public void ActiveItem()
     {
         border.SetActive(true);
         UserData.CurrentCharacter = idCharacter;
         OnClickChoose();
-        EventDispatcher.Instance.PostEvent(EventID.SetItemShop, this);
+        removeBtn.gameObject.SetActive(true);
+        equipBtn.gameObject.SetActive(false);
     }
 
     void OnClickUnlock()
     {
         if(UserData.CurrentCoin >= numberCoinUnlock)
         {
+            unlockBtn.gameObject.SetActive(false);
             UserData.CurrentCoin -= numberCoinUnlock;
             UserData.AddValueCharacter(idCharacter, valuePoint);
             OnClickUse();
+        }
+        else
+        {
+
         }
     }
 
     void OnClickRemove()
     {
-
+        if (idCharacter != 0)
+        {
+            Unuse();
+            EventDispatcher.Instance.PostEvent(EventID.SetDefaultItem);
+        }
     }
 
     public void OnClickBuyDragonBall(int index)
     {
-        if(UserData.CurrentCoin > Constant.BALL_SHOP_COST)
+        if(UserData.CurrentCoin >= Constant.BALL_SHOP_COST)
         {
             UserData.CurrentCoin -= Constant.BALL_SHOP_COST;
             UserData.AddDragonBall(index);
@@ -102,7 +127,7 @@ public class ItemShopUI : MonoBehaviour
 
     public void OnClickBuyItem(int id)
     {
-        if (UserData.CurrentCoin > Constant.ITEM_SHOP_COST)
+        if (UserData.CurrentCoin >= Constant.ITEM_SHOP_COST)
         {
             UserData.CurrentCoin -= Constant.ITEM_SHOP_COST;
             switch(id)
@@ -130,6 +155,7 @@ public class ItemShopUI : MonoBehaviour
 
     public void Unuse()
     {
+        removeBtn.gameObject.SetActive(false);
         equipBtn.gameObject.SetActive(true);
         border.SetActive(false);
     }

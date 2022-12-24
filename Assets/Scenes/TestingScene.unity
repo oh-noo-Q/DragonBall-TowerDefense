@@ -205,6 +205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -358,6 +362,7 @@ GameObject:
   - component: {fileID: 60273672}
   - component: {fileID: 60273671}
   - component: {fileID: 60273670}
+  - component: {fileID: 60273673}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -480,6 +485,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60273668}
   m_CullTransparentMesh: 1
+--- !u!114 &60273673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60273668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &71334870
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,6 +689,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1168,6 +1189,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1234,6 +1259,7 @@ GameObject:
   - component: {fileID: 258207371}
   - component: {fileID: 258207370}
   - component: {fileID: 258207369}
+  - component: {fileID: 258207372}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -1356,6 +1382,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258207367}
   m_CullTransparentMesh: 1
+--- !u!114 &258207372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258207367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &274466165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,13 +1579,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319368896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.75, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 1372909773}
   - {fileID: 1224035771}
-  m_Father: {fileID: 1864309188}
-  m_RootOrder: 3
+  m_Father: {fileID: 721957202}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &319368898
 MonoBehaviour:
@@ -1595,6 +1633,7 @@ MonoBehaviour:
   poison: {fileID: 0}
   currentObjInteract: {fileID: 0}
   coinTrans: {fileID: 0}
+  coinPrf: {fileID: 0}
 --- !u!114 &319368900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1816,6 +1855,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2453,6 +2496,7 @@ GameObject:
   - component: {fileID: 466319700}
   - component: {fileID: 466319699}
   - component: {fileID: 466319698}
+  - component: {fileID: 466319701}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -2575,6 +2619,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466319696}
   m_CullTransparentMesh: 1
+--- !u!114 &466319701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466319696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &471674819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,6 +2934,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3022,6 +3082,7 @@ GameObject:
   - component: {fileID: 621467816}
   - component: {fileID: 621467815}
   - component: {fileID: 621467814}
+  - component: {fileID: 621467817}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -3144,6 +3205,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621467812}
   m_CullTransparentMesh: 1
+--- !u!114 &621467817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621467812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &628412266
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,7 +3529,6 @@ GameObject:
   - component: {fileID: 684303948}
   - component: {fileID: 684303947}
   - component: {fileID: 684303945}
-  - component: {fileID: 684303946}
   m_Layer: 0
   m_Name: ItemShop (6)
   m_TagString: Untagged
@@ -3499,58 +3571,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 684303947}
-  unlockBtn: {fileID: 258207369}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 684303946}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 1441126017}
   numberUnlockTxt: {fileID: 407142624}
   pointTxt: {fileID: 0}
   numberCoinUnlock: 0
---- !u!114 &684303946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684303943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 684303947}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &684303947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3654,6 +3682,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8184259f348ac8c4c9b84eeb9a56b320, type: 3}
+--- !u!1 &721957201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721957202}
+  m_Layer: 0
+  m_Name: ModelPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721957202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721957201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 8.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6928829874247431321}
+  - {fileID: 319368897}
+  m_Father: {fileID: 1864309188}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738255729
 GameObject:
   m_ObjectHideFlags: 0
@@ -3865,7 +3925,6 @@ GameObject:
   - component: {fileID: 812650588}
   - component: {fileID: 812650587}
   - component: {fileID: 812650585}
-  - component: {fileID: 812650586}
   m_Layer: 0
   m_Name: ItemShop (1)
   m_TagString: Untagged
@@ -3908,58 +3967,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 812650587}
-  unlockBtn: {fileID: 466319698}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 812650586}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 561283965}
   numberUnlockTxt: {fileID: 139010542}
   pointTxt: {fileID: 0}
   numberCoinUnlock: 0
---- !u!114 &812650586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812650583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 812650587}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &812650587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4036,7 +4051,6 @@ GameObject:
   - component: {fileID: 855570364}
   - component: {fileID: 855570363}
   - component: {fileID: 855570361}
-  - component: {fileID: 855570362}
   m_Layer: 0
   m_Name: ItemShop (3)
   m_TagString: Untagged
@@ -4079,58 +4093,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 855570363}
-  unlockBtn: {fileID: 60273670}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 855570362}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 1045611952}
   numberUnlockTxt: {fileID: 1364004194}
   pointTxt: {fileID: 0}
   numberCoinUnlock: 0
---- !u!114 &855570362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855570359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 855570363}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &855570363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4176,6 +4146,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4811,7 +4785,6 @@ GameObject:
   - component: {fileID: 1095924572}
   - component: {fileID: 1095924571}
   - component: {fileID: 1095924569}
-  - component: {fileID: 1095924570}
   m_Layer: 0
   m_Name: ItemShop (8)
   m_TagString: Untagged
@@ -4854,58 +4827,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 1095924571}
-  unlockBtn: {fileID: 1541813540}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 1095924570}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 385735888}
   numberUnlockTxt: {fileID: 1612421385}
   pointTxt: {fileID: 0}
   numberCoinUnlock: 0
---- !u!114 &1095924570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095924567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1095924571}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1095924571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5725,7 +5654,6 @@ GameObject:
   - component: {fileID: 1249832389}
   - component: {fileID: 1249832388}
   - component: {fileID: 1249832386}
-  - component: {fileID: 1249832387}
   m_Layer: 0
   m_Name: ItemShop (4)
   m_TagString: Untagged
@@ -5768,58 +5696,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 1249832388}
-  unlockBtn: {fileID: 1304746971}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 1249832387}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 902323889}
   numberUnlockTxt: {fileID: 1751605424}
   pointTxt: {fileID: 0}
   numberCoinUnlock: 0
---- !u!114 &1249832387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249832384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1249832388}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1249832388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6046,6 +5930,7 @@ GameObject:
   - component: {fileID: 1304746973}
   - component: {fileID: 1304746972}
   - component: {fileID: 1304746971}
+  - component: {fileID: 1304746974}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -6168,6 +6053,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304746969}
   m_CullTransparentMesh: 1
+--- !u!114 &1304746974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304746969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326904703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6579,6 +6476,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -7017,6 +6918,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -7083,6 +6988,7 @@ GameObject:
   - component: {fileID: 1541813542}
   - component: {fileID: 1541813541}
   - component: {fileID: 1541813540}
+  - component: {fileID: 1541813543}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -7205,6 +7111,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541813538}
   m_CullTransparentMesh: 1
+--- !u!114 &1541813543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541813538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1567969382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
@@ -7497,6 +7415,7 @@ MonoBehaviour:
   giantBoss: {fileID: 0}
   princess: {fileID: 0}
   castle: {fileID: 2053589476}
+  shop: {fileID: 1864309189}
   towerPrefab: {fileID: 2694461126863373645, guid: 184ce14d85056144cb75c4fa9c20d3e9, type: 3}
   levelMap: {fileID: 2017003602}
 --- !u!1 &1661352510
@@ -7816,6 +7735,7 @@ GameObject:
   - component: {fileID: 1695346095}
   - component: {fileID: 1695346094}
   - component: {fileID: 1695346093}
+  - component: {fileID: 1695346096}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -7938,6 +7858,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695346091}
   m_CullTransparentMesh: 1
+--- !u!114 &1695346096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695346091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1704021208 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
@@ -8204,6 +8136,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -8270,7 +8206,6 @@ GameObject:
   - component: {fileID: 1838419108}
   - component: {fileID: 1838419107}
   - component: {fileID: 1838419105}
-  - component: {fileID: 1838419106}
   m_Layer: 0
   m_Name: ItemShop (5)
   m_TagString: Untagged
@@ -8313,58 +8248,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 1838419107}
-  unlockBtn: {fileID: 1928655444}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 1838419106}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 1387344088}
   numberUnlockTxt: {fileID: 1685897740}
   pointTxt: {fileID: 0}
   numberCoinUnlock: 0
---- !u!114 &1838419106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838419103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1838419107}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1838419107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8448,6 +8339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1864309188}
+  - component: {fileID: 1864309189}
   m_Layer: 0
   m_Name: ShowShop
   m_TagString: Untagged
@@ -8468,11 +8360,25 @@ Transform:
   m_Children:
   - {fileID: 768789118}
   - {fileID: 464794451}
-  - {fileID: 6928829874247431321}
-  - {fileID: 319368897}
+  - {fileID: 721957202}
   m_Father: {fileID: 1849651671}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1864309189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864309187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4374a539c3f4e4ea884c0ffaff2b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelPosition: {fileID: 721957202}
+  bigModel: {fileID: 6928829874247431320}
+  smallModel: {fileID: 319368899}
 --- !u!1 &1869680037
 GameObject:
   m_ObjectHideFlags: 0
@@ -8612,6 +8518,10 @@ PrefabInstance:
     - target: {fileID: 5037971349022229919, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_TagString
       value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138212105727315548, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
@@ -8782,6 +8692,7 @@ GameObject:
   - component: {fileID: 1928655446}
   - component: {fileID: 1928655445}
   - component: {fileID: 1928655444}
+  - component: {fileID: 1928655447}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -8904,6 +8815,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928655442}
   m_CullTransparentMesh: 1
+--- !u!114 &1928655447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928655442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1975920182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9241,6 +9164,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053589475}
     m_Modifications:
+    - target: {fileID: 5037971349022229916, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
+      propertyPath: haveEarn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037971349022229918, guid: ffa712b8f3fa0c640bd1987e583b9cc9, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -9351,7 +9278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf9b834cab058e4293149cb8f956e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  person: {fileID: 3231061620240683266, guid: bfff6db2b6c5f8447b8fada549f06a13, type: 3}
+  smallCharacter: {fileID: 3231061620240683266, guid: 071b58a0175a9b842b61c5e8a19a8558, type: 3}
+  bigCharacter: {fileID: 3231061620240683266, guid: bfff6db2b6c5f8447b8fada549f06a13, type: 3}
   spawnPos: {fileID: 1258768808}
   waitFloor: {fileID: 1704021208}
   isActive: 0
@@ -9372,7 +9300,6 @@ GameObject:
   - component: {fileID: 2061120719}
   - component: {fileID: 2061120718}
   - component: {fileID: 2061120716}
-  - component: {fileID: 2061120717}
   m_Layer: 0
   m_Name: ItemShop (2)
   m_TagString: Untagged
@@ -9415,58 +9342,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 2061120718}
-  unlockBtn: {fileID: 1695346093}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 2061120717}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 1686177928}
   numberUnlockTxt: {fileID: 274466167}
   pointTxt: {fileID: 0}
   numberCoinUnlock: 0
---- !u!114 &2061120717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061120714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2061120718}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &2061120718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9742,7 +9625,6 @@ GameObject:
   - component: {fileID: 2147346366}
   - component: {fileID: 2147346365}
   - component: {fileID: 2147346363}
-  - component: {fileID: 2147346364}
   m_Layer: 0
   m_Name: ItemShop (7)
   m_TagString: Untagged
@@ -9785,58 +9667,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 2147346365}
-  unlockBtn: {fileID: 621467814}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 2147346364}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 756014745}
   numberUnlockTxt: {fileID: 630792324}
   pointTxt: {fileID: 0}
   numberCoinUnlock: 0
---- !u!114 &2147346364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147346361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2147346365}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &2147346365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10005,9 +9843,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 8601789096224607792}
-  unlockBtn: {fileID: 8601789095939915802}
+  unlockBtn: {fileID: 0}
   equipBtn: {fileID: 0}
-  itemBtn: {fileID: 8881117294334532165}
+  itemBtn: {fileID: 0}
   removeBtn: {fileID: 0}
   border: {fileID: 2034898527775931713}
   numberUnlockTxt: {fileID: 8601789095232779508}
@@ -10917,6 +10755,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1849651671}
     m_Modifications:
+    - target: {fileID: 1000731614531881564, guid: bfff6db2b6c5f8447b8fada549f06a13, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3231061620240683265, guid: bfff6db2b6c5f8447b8fada549f06a13, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -12592,6 +12434,7 @@ MonoBehaviour:
   poison: {fileID: 0}
   currentObjInteract: {fileID: 0}
   coinTrans: {fileID: 0}
+  coinPrf: {fileID: 0}
 --- !u!4 &6928829874247431321
 Transform:
   m_ObjectHideFlags: 0
@@ -12600,13 +12443,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6928829874247431314}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.75, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6928829872948231822}
   - {fileID: 6928829872719538492}
-  m_Father: {fileID: 1864309188}
-  m_RootOrder: 2
+  m_Father: {fileID: 721957202}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &6928829874247431323
 CircleCollider2D:
@@ -13088,6 +12931,7 @@ GameObject:
   - component: {fileID: 8601789095939915804}
   - component: {fileID: 8601789095939915803}
   - component: {fileID: 8601789095939915802}
+  - component: {fileID: 8601789095939915805}
   m_Layer: 0
   m_Name: UnlockBtn
   m_TagString: Untagged
@@ -13210,6 +13054,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8601789095939915800}
   m_CullTransparentMesh: 1
+--- !u!114 &8601789095939915805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8601789095939915800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6519363f168c71644bc470361673aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8601789096224607790
 GameObject:
   m_ObjectHideFlags: 0
@@ -13222,7 +13078,6 @@ GameObject:
   - component: {fileID: 8601789096224607793}
   - component: {fileID: 8601789096224607792}
   - component: {fileID: 418843350742443317}
-  - component: {fileID: 8881117294334532165}
   m_Layer: 0
   m_Name: ItemShop
   m_TagString: Untagged
@@ -13385,50 +13240,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8881117294334532165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8601789096224607790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 8601789096224607792}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!224 &9028753404808135604
 RectTransform:
   m_ObjectHideFlags: 0

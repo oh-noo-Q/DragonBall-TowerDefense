@@ -38,7 +38,8 @@ public class Player : MonoBehaviour
     public IInteractableObject currentObjInteract;
     int dieEnemyAnim = 1;
 
-    public Transform coinTrans;
+    [SerializeField] Transform coinTrans;
+    [SerializeField] Coin coinPrf;
 
     public TextMeshPro StrengthText => strengthText;
     public bool IsDragged => isDragged;
@@ -316,9 +317,17 @@ public class Player : MonoBehaviour
                 Floor room = hit.collider.GetComponent<Floor>();
                 if (room != null)
                 {
-                    earnCoinCor = StartCoroutine(StartEarnCoin());
                     transform.SetParent(room.ObjectSpawnPositions[1]);
                     transform.localPosition = Vector3.zero;
+                    if (room.HaveEarn)
+                    {
+                        earnCoinCor = StartCoroutine(StartEarnCoin());
+                        Dance();
+                    }
+                    else
+                    {
+                        if(earnCoinCor != null) StopCoroutine(earnCoinCor);
+                    }
                 }
             }
             else
@@ -419,6 +428,8 @@ public class Player : MonoBehaviour
         if (isDragged)
         {
             transform.position = spriteDragStartPosition + (camera.ScreenToWorldPoint(Input.mousePosition) - mouseDragStartPosition);
+            animator.SetInteger("Dance", 0);
+            if(earnCoinCor != null) StopCoroutine(earnCoinCor);
             animator.SetBool("Movie", true);
             animator.SetBool("Down", false);
             //Vector2 ray = camera.ScreenToWorldPoint(Input.mousePosition);
@@ -441,17 +452,38 @@ public class Player : MonoBehaviour
         isDragged = false;
     }
 
+    void Dance()
+    {
+        int ran = Random.Range(1, 3);
+        animator.SetInteger("Dance", ran);
+    }
+
     public void CollectCoin()
     {
-        coinTrans.gameObject.SetActive(true);
+        var coinClone = coinPrf.GetPooledInstance<Coin>();
+        coinClone.transform.SetParent(transform);
+        coinClone.transform.position = coinTrans.position;
         Vector3 oldPos = coinTrans.position;
 
-        coinTrans.DOMoveY(coinTrans.position.y + 1f, 0.5f).OnComplete(() =>
+        coinClone.transform.DOMoveY(coinTrans.position.y + 1f, 0.5f).OnComplete(() =>
         {
-            coinTrans.gameObject.SetActive(false);
-            coinTrans.position = oldPos;
+            coinClone.ReturnToPool();
         });
-        coinTrans.DORotate(new Vector3(0, 360, 0) , 0.5f, RotateMode.Fast).SetLoops(-1);
+        coinClone.transform.DORotate(new Vector3(0, 360, 0) , 0.5f, RotateMode.Fast);
+    }
 
+    public void RandomSkin()
+    {
+        CharacterDictionary characterDic = CharacterManagerDataSO.Instance.characterDic;
+        int id = Random.Range(0, characterDic.Count);
+        CharacterDataSO data = characterDic[(Character)id];
+
+    }
+
+    public void ShowStrength(bool isShow)
+    {
+        if(isShow)
+            strengthText.gameObject.SetActive(true);
+        else strengthText.gameObject.SetActive(false);
     }
 }

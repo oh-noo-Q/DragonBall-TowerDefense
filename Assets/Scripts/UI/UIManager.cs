@@ -72,13 +72,13 @@ public class UIManager : Singleton<UIManager>
         gameplayUI.gameObject.SetActive(false);
     }
 
-    public void Loading(Action loadAction = null, Action callback = null)
+    public void Loading(Action loadAction = null, float time = 2f, Action callback = null)
     {
         loading.interactable = true;
         loading.DOFade(1f, 0.5f).OnComplete(() =>
         {
             loadAction?.Invoke();
-            loading.DOFade(0f, 2f).OnComplete(() =>
+            loading.DOFade(0f, time).OnComplete(() =>
             {
                 loading.interactable = false;
                 callback?.Invoke();

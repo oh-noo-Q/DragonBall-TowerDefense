@@ -72,7 +72,7 @@ public class GameplayUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             UIManager.Instance.ShowMainMenuUI();
-        });
+        }, 1f);
     }
 
     private void OnSkipButtonClicked()
@@ -89,7 +89,7 @@ public class GameplayUI : MonoBehaviour
         UIManager.Instance.Loading(() =>
         {
             this.PostEvent(EventID.OnLoadLevel);
-        },
+        }, 2f, 
         () => {
             GameManager.Instance.GameIntro();
         });

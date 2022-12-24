@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 3231061620240683266}
   - component: {fileID: 3231061620240684799}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,7 +165,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 82e935800e36f824ea7949c61c2d8958, type: 2}
+  - {fileID: 2100000, guid: d3a0b770c10afa146a431dd1134bc86f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9db98c60740638449864eb028fbe7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 0a34b60ee360ce14783a249d7495de2a, type: 2}
-  initialSkinName: Goku copy
+  skeletonDataAsset: {fileID: 11400000, guid: e0c484f95c210bc46baa650158e090cc, type: 2}
+  initialSkinName: Goten
   initialFlipX: 0
   initialFlipY: 0
   updateWhenInvisible: 3

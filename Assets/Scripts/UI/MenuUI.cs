@@ -38,7 +38,7 @@ public class MenuUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             this.PostEvent(EventID.OnLoadLevel);
-        }, 
+        }, 2f,
         () => {
             GameManager.Instance.GameIntro();
         });
@@ -50,7 +50,7 @@ public class MenuUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             GameManager.Instance.JoinCastle();
-        });
+        }, 1f);
     }
 
     private void JoinShop()
@@ -59,6 +59,6 @@ public class MenuUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             GameManager.Instance.ShowShop();
-        });
+        }, 1f);
     }
 }

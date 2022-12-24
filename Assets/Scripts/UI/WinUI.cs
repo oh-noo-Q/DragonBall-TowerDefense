@@ -46,7 +46,7 @@ public class WinUI : MonoBehaviour
             gameObject.SetActive(false);
             UserData.CurrentCoin += 100;
             this.PostEvent(EventID.OnLoadLevel);
-        },
+        }, 2f,
         () => {
             GameManager.Instance.GameIntro();
         });
@@ -60,7 +60,7 @@ public class WinUI : MonoBehaviour
             gameObject.SetActive(false);
             UserData.CurrentCoin += 100;
             this.PostEvent(EventID.OnLoadLevel);
-        },
+        }, 2f,
         () => {
             GameManager.Instance.GameIntro();
         });
