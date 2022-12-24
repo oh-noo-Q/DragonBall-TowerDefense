@@ -64,7 +64,7 @@ public class ItemShopUI : MonoBehaviour
         EventDispatcher.Instance.PostEvent(EventID.OnClickSkin, nameSkin);
     }
 
-    void OnClickUse()
+    public void OnClickUse()
     {
         border.SetActive(true);
         UserData.CurrentCharacter = idCharacter;

@@ -360,6 +360,11 @@ public class Player : MonoBehaviour
                 currentFloor.InteractedObjects.Add(obj);
             }
         }
+        else
+        {
+            currentFloor.InteractableObjects.Remove(obj);
+            currentFloor.InteractedObjects.Add(obj);
+        }
     }
 
     private void Poisoned()

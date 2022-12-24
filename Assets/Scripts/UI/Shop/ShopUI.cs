@@ -147,4 +147,13 @@ public class ShopUI : MonoBehaviour
         currentItem.Unuse();
         currentItem = (ItemShopUI)obj;
     }
+
+    void ResetDefaultItem()
+    {
+        currentItem.Unuse();
+        currentItem = items[0];
+        items[0].border.SetActive(true);
+        UserData.CurrentCharacter = 0;
+
+    }
 }
