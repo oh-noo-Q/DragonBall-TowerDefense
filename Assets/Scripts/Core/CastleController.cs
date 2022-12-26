@@ -41,6 +41,7 @@ public class CastleController : MonoBehaviour
         else
             newPerson = Instantiate(bigCharacter, transform);
         newPerson.ShowStrength(false);
+        newPerson.ShowStrength(false);
         SetSkin(newPerson.GetComponent<SkeletonMecanim>(), data.name);
         newPerson.transform.position = spawnPos.position;
         newPerson.transform.DOMove(waitFloor.ObjectSpawnPositions[1].position, 2f).OnComplete(() =>
@@ -61,6 +62,7 @@ public class CastleController : MonoBehaviour
 
     public void LeaveCastle()
     {
+        gameObject.SetActive(false);
         isActive = false;
         StopCoroutine(spawnPersonCor);
         GameManager.Instance.Player.ShowStrength(false);

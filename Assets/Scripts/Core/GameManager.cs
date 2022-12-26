@@ -318,6 +318,8 @@ public class GameManager : MonoBehaviour
     {
         ClearLevel();
         UIManager.Instance.ShowCastleUI();
+        castle.gameObject.SetActive(true);
+
         mainCamera.transform.localPosition = new Vector3(-35f, 1f, 0);
         mainCamera.orthographicSize = 15f;
         player.transform.SetParent(castle.waitFloor.ObjectSpawnPositions[1]);
@@ -327,14 +329,6 @@ public class GameManager : MonoBehaviour
         gameMode = GameMode.PLAYING;
     }
 
-    public void ReturnMainMenu()
-    {
-        gameMode = GameMode.AUTOPLAY;
-        mainCamera.transform.localPosition = camMainMenuPos;
-        mainCamera.orthographicSize = 10f;
-        if (castle.isActive)
-            castle.LeaveCastle();
-    }
 
     public void ShowShop()
     {
@@ -348,6 +342,14 @@ public class GameManager : MonoBehaviour
     public void HideShop()
     {
         shop.LeaveShop();
+    }
+    public void ReturnMainMenu()
+    {
+        gameMode = GameMode.AUTOPLAY;
+        mainCamera.transform.localPosition = camMainMenuPos;
+        mainCamera.orthographicSize = 10f;
+        if (castle.isActive)
+            castle.LeaveCastle();
     }
 }
 

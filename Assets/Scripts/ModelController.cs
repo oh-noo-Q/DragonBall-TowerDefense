@@ -30,4 +30,33 @@ public class ModelController : MonoBehaviour
     {
         enemy.ResetAttack();
     }
+
+    public void Punch01()
+    {
+        enemy.Punch01();
+    }
+    public void Punch02()
+    {
+        enemy.Punch02();
+    }
+
+    public void Punch03()
+    {
+        enemy.Punch03();
+    }
+
+    public void Punch04()
+    {
+        enemy.Punch04();
+    }
+
+    public void CritPunch()
+    {
+        enemy.CritPunch();
+    }
+
+    public void CritDap()
+    {
+        enemy.CritDap();
+    }
 }

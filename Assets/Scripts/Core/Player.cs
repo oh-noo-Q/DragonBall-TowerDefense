@@ -138,6 +138,21 @@ public class Player : MonoBehaviour
         SoundManager.instance.PlaySingle(SoundType.Punch);
     }
 
+    public void Punch02()
+    {
+        SoundManager.instance.PlaySingle(SoundType.Punch02);
+    }
+
+    public void Punch03()
+    {
+        SoundManager.instance.PlaySingle(SoundType.Punch03);
+    }
+
+    public void Punch04()
+    {
+        SoundManager.instance.PlaySingle(SoundType.Punch04);
+    }
+
     public void CritPunch()
     {
         SoundManager.instance.PlaySingle(SoundType.CritPunch);
@@ -156,6 +171,11 @@ public class Player : MonoBehaviour
     public void MiniKame()
     {
         SoundManager.instance.PlaySingle(SoundType.MiniKame);
+    }
+
+    public void FlyKame()
+    {
+        SoundManager.instance.PlaySingle(SoundType.FlyKame);
     }
 
     public void Fly()
@@ -253,6 +273,7 @@ public class Player : MonoBehaviour
 
     public void Revive()
     {
+        ActiveCollider();
         animator.SetBool("Die", false);
         strengthText.gameObject.SetActive(true);
         int oldStrength = strength;
