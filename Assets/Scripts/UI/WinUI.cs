@@ -35,7 +35,8 @@ public class WinUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             UIManager.Instance.ShowMainMenuUI();
-        });
+            GameManager.Instance.ReturnMainMenu();
+        }, 1f);
     }
 
     private void OnX5ButtonClicked()

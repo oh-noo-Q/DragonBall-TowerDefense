@@ -99,6 +99,7 @@ public class ShopUI : MonoBehaviour
         UIManager.Instance.Loading(() =>
         {
             Hide();
+            GameManager.Instance.HideShop();
             GameManager.Instance.ReturnMainMenu();
             UIManager.Instance.ShowMainMenuUI();
         });

@@ -105,7 +105,6 @@ public class BaseOperationObject : IInteractableObject
                 break;
             case Operation.MULTIPLY:
                 GameManager.Player.MultiplyStrength(value);
-                Destroy(gameObject, 1f);
                 break;
             case Operation.DIVIDE:
                 GameManager.Player.DivideStrength(value);

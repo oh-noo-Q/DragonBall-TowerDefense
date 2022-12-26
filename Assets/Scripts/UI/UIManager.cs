@@ -60,14 +60,14 @@ public class UIManager : Singleton<UIManager>
 
     private IEnumerator ShowLoseUI()
     {
-        yield return ExtensionClass.GetWaitForSeconds(2f);
+        yield return ExtensionClass.GetWaitForSeconds(1f);
         loseUI.gameObject.SetActive(true);
         gameplayUI.gameObject.SetActive(false);
     }
 
     private IEnumerator ShowWinUI()
     {
-        yield return ExtensionClass.GetWaitForSeconds(2f);
+        yield return ExtensionClass.GetWaitForSeconds(1f);
         winUI.gameObject.SetActive(true);
         gameplayUI.gameObject.SetActive(false);
     }

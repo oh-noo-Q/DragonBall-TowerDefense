@@ -72,6 +72,7 @@ public class GameplayUI : MonoBehaviour
         {
             gameObject.SetActive(false);
             UIManager.Instance.ShowMainMenuUI();
+            GameManager.Instance.ReturnMainMenu();
         }, 1f);
     }
 

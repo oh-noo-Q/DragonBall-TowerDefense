@@ -9,6 +9,5 @@ public class DragonBall : Item
     {
         base.InteractWithPlayer();
         UserData.AddDragonBall(indexBall);
-        
     }
 }

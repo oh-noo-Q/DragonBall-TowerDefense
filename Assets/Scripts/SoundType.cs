@@ -10,4 +10,5 @@ public enum SoundType
     CritPunch,
     Block,
     Kame,
+    MiniKame,
 }

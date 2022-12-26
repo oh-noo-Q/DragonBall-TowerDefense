@@ -143,6 +143,15 @@ public static class UserData
         CharacterMerge = character;
     }
 
+    public static bool CheckHaveCharacterMerge()
+    {
+        foreach(int value in CharacterMerge)
+        {
+            if (value > 0) return true;
+        }
+        return false;
+    }
+
     public static int CurrentCharacter
     {
         get => PlayerPrefs.GetInt(CURRENT_CHARACTER, 0);

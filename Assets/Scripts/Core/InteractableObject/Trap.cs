@@ -13,6 +13,7 @@ public class Trap : BaseOperationObject
     public override void InteractWithPlayer()
     {
         base.InteractWithPlayer();
+        GameManager.Instance.Player.ActiveCollider();
         this.PostEvent(EventID.OnPlayerInteract);
         Attack();
     }

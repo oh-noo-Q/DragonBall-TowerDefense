@@ -7,7 +7,8 @@ public class Earring : Item
     public override void InteractWithPlayer()
     {
         base.InteractWithPlayer();
-        EventDispatcher.Instance.PostEvent(EventID.OnShowMerge);
+        if(UserData.CheckHaveCharacterMerge())
+            EventDispatcher.Instance.PostEvent(EventID.OnShowMerge);
         Debug.Log("Earring");
     }
 

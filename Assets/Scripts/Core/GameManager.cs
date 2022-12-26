@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform levelMap;
 
     private GameMode gameMode = GameMode.MENU;
+    private Vector3 camMainMenuPos = new Vector3(-64, -2.5f, 0);
 
     public Camera MainCamera => mainCamera;
     public List<Tower> TowerList => towerList;
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
     public void SetMainPlayer(Player main)
     {
         player = main;
+        player.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
     }
 
     public Tower CurrentMainTower
@@ -56,6 +58,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+
     }
 
 
@@ -67,7 +70,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-
+        mainCamera.transform.localPosition = camMainMenuPos;
+        mainCamera.orthographicSize = 10f;
         // Set up user data
         if (UserData.DragonBall.Count <= 0) UserData.NewDragonBall();
         if (UserData.CharacterMerge.Count <= 0 ||
@@ -160,7 +164,6 @@ public class GameManager : MonoBehaviour
     public void LoadLevel(object param = null)
     {
         ClearLevel();
-
         int odd = UserData.CurrentLevel % maxLevel;
         int currentLevel = odd == 0 ? maxLevel : odd;
 
@@ -179,6 +182,7 @@ public class GameManager : MonoBehaviour
             tower.transform.localPosition = new Vector3(towerIndex * 8f, 0f, 0f);
             towerList.Add(tower);
         }
+        player.ActiveCollider();
         player.transform.SetParent(towerList[0].FloorList[0].PlayerSpawnPosition);
         player.transform.localPosition = Vector3.zero;
         player.transform.localScale = new Vector3(0.35f, 0.35f, 0.35f);
@@ -289,6 +293,9 @@ public class GameManager : MonoBehaviour
     private void Win(object param)
     {
         player.transform.SetParent(null);
+        mainCamera.transform.localPosition = new Vector3(-64, -6.3f, 0);
+        mainCamera.orthographicSize = 13f;
+        shop.ModelDance();
         gameMode = GameMode.AUTOPLAY;
         UserData.CurrentLevel++;
     }
@@ -309,10 +316,13 @@ public class GameManager : MonoBehaviour
 
     public void JoinCastle()
     {
+        ClearLevel();
         UIManager.Instance.ShowCastleUI();
         mainCamera.transform.localPosition = new Vector3(-35f, 1f, 0);
+        mainCamera.orthographicSize = 15f;
         player.transform.SetParent(castle.waitFloor.ObjectSpawnPositions[1]);
         player.transform.localPosition = Vector3.zero;
+        player.gameObject.SetActive(true);
         castle.JoinCastle();
         gameMode = GameMode.PLAYING;
     }
@@ -320,7 +330,8 @@ public class GameManager : MonoBehaviour
     public void ReturnMainMenu()
     {
         gameMode = GameMode.AUTOPLAY;
-        mainCamera.transform.localPosition = Vector3.zero;
+        mainCamera.transform.localPosition = camMainMenuPos;
+        mainCamera.orthographicSize = 10f;
         if (castle.isActive)
             castle.LeaveCastle();
     }
@@ -329,14 +340,14 @@ public class GameManager : MonoBehaviour
     {
         UIManager.Instance.ShowShopUI();
         mainCamera.transform.localPosition = new Vector3(-64f, -10f, 0);
+        mainCamera.orthographicSize = 15f;
         player.ShowStrength(false);
         shop.JoinShop();
     }
 
     public void HideShop()
     {
-        mainCamera.transform.localPosition = Vector3.zero;
-        player.ShowStrength(false);
+        shop.LeaveShop();
     }
 }
 

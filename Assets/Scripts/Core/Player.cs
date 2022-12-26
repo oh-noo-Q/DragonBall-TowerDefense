@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
     private void OnEnable()
     {
         UpdateStrengthText(strength);
-        strengthText.gameObject.SetActive(true);
+        //strengthText.gameObject.SetActive(true);
         poison = null;
         poisonedTime = 0;
     }
@@ -151,6 +151,11 @@ public class Player : MonoBehaviour
     {
         SoundManager.instance.PlaySingle(SoundType.Kame);
         EventDispatcher.Instance.PostEvent(EventID.Shaking, null);
+    }
+
+    public void MiniKame()
+    {
+        SoundManager.instance.PlaySingle(SoundType.MiniKame);
     }
 
     public void Fly()
@@ -262,15 +267,17 @@ public class Player : MonoBehaviour
         StartCoroutine(AnimateStrengthText(oldStrength));
     }
 
+    private Vector3 oldPosBeforeSlap;
     public void Slap()
     {
+        oldPosBeforeSlap = transform.position;
         animator.SetTrigger("Slap");
     }
 
     void EndSlap()
     {
         collider.enabled = true;
-        transform.DOLocalMove(new Vector3(0, 0, 0), 0.3f);
+        transform.DOLocalMove(oldPosBeforeSlap, 0.3f);
     }
 
     public void OnDrop()
@@ -322,7 +329,7 @@ public class Player : MonoBehaviour
                     if (room.HaveEarn)
                     {
                         earnCoinCor = StartCoroutine(StartEarnCoin());
-                        Dance();
+                        Dance(0);
                     }
                     else
                     {
@@ -360,7 +367,6 @@ public class Player : MonoBehaviour
     IEnumerator DelayToInteract(IInteractableObject obj)
     {
         yield return ExtensionClass.GetWaitForSeconds(1f);
-        obj.InteractWithPlayer();
         if (obj.transform.TryGetComponent<Enemy>(out Enemy enemy))
         {
             if (!enemy.IsWin)
@@ -374,6 +380,7 @@ public class Player : MonoBehaviour
             currentFloor.InteractableObjects.Remove(obj);
             currentFloor.InteractedObjects.Add(obj);
         }
+        obj.InteractWithPlayer();
     }
 
     private void Poisoned()
@@ -452,10 +459,15 @@ public class Player : MonoBehaviour
         isDragged = false;
     }
 
-    void Dance()
+    public void Dance(int type)
     {
-        int ran = Random.Range(1, 3);
-        animator.SetInteger("Dance", ran);
+        if (type == 0)
+        {
+            int ran = Random.Range(1, 3);
+            animator.SetInteger("Dance", ran);
+        }
+        else
+            animator.SetInteger("Dance", type);
     }
 
     public void CollectCoin()

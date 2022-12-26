@@ -148,4 +148,20 @@ public class Enemy : BaseOperationObject
     {
         animator.SetInteger("Attack", 0);
     }
+
+    //sound
+    public void Punch01()
+    {
+        SoundManager.instance.PlaySingle(SoundType.Punch);
+    }
+
+    public void CritPunch()
+    {
+        SoundManager.instance.PlaySingle(SoundType.CritPunch);
+    }
+
+    public void CritDap()
+    {
+        SoundManager.instance.PlaySingle(SoundType.CritDap);
+    }
 }

@@ -33,7 +33,7 @@ public class GiantBoss : Enemy
 
     public override void GetHitAnim(int index)
     {
-        Die();
+        base.GetHitAnim(index);
     }
 
     protected override void Attack()

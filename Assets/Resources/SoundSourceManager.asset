@@ -35,8 +35,8 @@ MonoBehaviour:
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
     isExpanded: 1
-    _keyValues: 000000000100000002000000030000000400000005000000
-    _keys: 000000000100000002000000030000000400000005000000
+    _keyValues: 00000000010000000200000003000000040000000500000006000000
+    _keys: 00000000010000000200000003000000040000000500000006000000
     _values:
     - Punch
     - Die
@@ -44,6 +44,7 @@ MonoBehaviour:
     - CritPunch
     - Block
     - Kame
+    - MiniKame
   defaultSound:
     reorderableList:
       canAdd: 1
@@ -67,8 +68,8 @@ MonoBehaviour:
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
     isExpanded: 1
-    _keyValues: 000000000100000002000000030000000400000005000000
-    _keys: 000000000100000002000000030000000400000005000000
+    _keyValues: 00000000010000000200000003000000040000000500000006000000
+    _keys: 00000000010000000200000003000000040000000500000006000000
     _values:
     - {fileID: 8300000, guid: 728a53181c926594e984c68cfb8ff938, type: 3}
     - {fileID: 8300000, guid: d505da37e97252342a5e3e763b4d362c, type: 3}
@@ -76,3 +77,4 @@ MonoBehaviour:
     - {fileID: 8300000, guid: c6f05d8c9a2167e468cdd19c07f1074c, type: 3}
     - {fileID: 8300000, guid: 6bd79799e2eedce4b8ba5de5b3732b15, type: 3}
     - {fileID: 8300000, guid: 735d084fba20a63498c16a6f499d0ab0, type: 3}
+    - {fileID: 8300000, guid: 9e1458eb9c63745438a5c56d712c12f9, type: 3}
