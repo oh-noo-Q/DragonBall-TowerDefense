@@ -390,6 +390,7 @@ public class Player : MonoBehaviour
         yield return ExtensionClass.GetWaitForSeconds(1f);
         if (obj.transform.TryGetComponent<Enemy>(out Enemy enemy))
         {
+            obj.InteractWithPlayer();
             if (!enemy.IsWin)
             {
                 currentFloor.InteractableObjects.Remove(obj);
@@ -400,8 +401,8 @@ public class Player : MonoBehaviour
         {
             currentFloor.InteractableObjects.Remove(obj);
             currentFloor.InteractedObjects.Add(obj);
+            obj.InteractWithPlayer();
         }
-        obj.InteractWithPlayer();
     }
 
     private void Poisoned()

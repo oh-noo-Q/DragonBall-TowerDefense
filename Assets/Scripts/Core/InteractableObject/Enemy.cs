@@ -118,7 +118,7 @@ public class Enemy : BaseOperationObject
 
     }
 
-    public void EndAnim()
+    public virtual void EndAnim()
     {
         Die();
     }

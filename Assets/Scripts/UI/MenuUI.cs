@@ -61,4 +61,9 @@ public class MenuUI : MonoBehaviour
             GameManager.Instance.ShowShop();
         }, 1f);
     }
+
+    public void ShowWishDragonBall()
+    {
+
+    }
 }
