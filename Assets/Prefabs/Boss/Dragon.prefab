@@ -332,3 +332,4 @@ MonoBehaviour:
   model: {fileID: 5685402234198580447}
   AmountAttackType: 1
   playerPos: {x: 3, y: -2.5, z: 0}
+  special: 1

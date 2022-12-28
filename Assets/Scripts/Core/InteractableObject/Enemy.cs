@@ -118,7 +118,7 @@ public class Enemy : BaseOperationObject
 
     }
 
-    public void EndAnim()
+    public virtual void EndAnim()
     {
         Die();
     }
@@ -153,6 +153,20 @@ public class Enemy : BaseOperationObject
     public void Punch01()
     {
         SoundManager.instance.PlaySingle(SoundType.Punch);
+    }
+    public void Punch02()
+    {
+        SoundManager.instance.PlaySingle(SoundType.Punch02);
+    }
+
+    public void Punch03()
+    {
+        SoundManager.instance.PlaySingle(SoundType.Punch03);
+    }
+
+    public void Punch04()
+    {
+        SoundManager.instance.PlaySingle(SoundType.Punch04);
     }
 
     public void CritPunch()

@@ -479,13 +479,6 @@ AnimationClip:
     intParameter: 0
     messageOptions: 1
   - time: 1.6333
-    functionName: Vega_Die
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 1
-  - time: 1.6333
     functionName: CritPunch
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -499,20 +492,6 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.7
-    functionName: Vega_Die
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 1
-  - time: 1.7
-    functionName: CritPunch
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 1
 --- !u!1101 &-7151435022720269521
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4568,13 +4547,6 @@ AnimationClip:
     intParameter: 0
     messageOptions: 1
   - time: 1.6333
-    functionName: CritPunch
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 1
-  - time: 1.6333
     functionName: Vega_Die
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -4588,20 +4560,6 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.7
-    functionName: CritPunch
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 1
-  - time: 1.7
-    functionName: Vega_Die
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 1
 --- !u!74 &7630988970615502680
 AnimationClip:
   m_ObjectHideFlags: 0

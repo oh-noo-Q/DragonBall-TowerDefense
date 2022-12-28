@@ -333,7 +333,8 @@ MonoBehaviour:
   questionMark: {fileID: 0}
   model: {fileID: 5685402234198580447}
   AmountAttackType: 1
-  playerPos: {x: 5, y: -2.5, z: 0}
+  playerPos: {x: 3, y: -2.5, z: 0}
+  special: 1
 --- !u!114 &6205126595004258617
 MonoBehaviour:
   m_ObjectHideFlags: 0

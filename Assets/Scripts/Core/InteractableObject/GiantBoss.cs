@@ -19,6 +19,7 @@ public enum BossType
 public class GiantBoss : Enemy
 {
     public Vector3 playerPos;
+    [SerializeField] bool special;
     public override void InteractWithPlayer()
     {
         base.InteractWithPlayer();
@@ -27,13 +28,19 @@ public class GiantBoss : Enemy
     }
     protected override void Die()
     {
+        Debug.Log("sound!!");
         animator.SetBool("Die", true);
         this.PostEvent(EventID.OnWinLevel);
     }
 
     public override void GetHitAnim(int index)
     {
-        base.GetHitAnim(index);
+        if(special)
+        {
+            Die();
+        }
+        else 
+            base.GetHitAnim(index);
     }
 
     protected override void Attack()
