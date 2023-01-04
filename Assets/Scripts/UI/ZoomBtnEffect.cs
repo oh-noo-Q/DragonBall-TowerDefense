@@ -9,6 +9,7 @@ public class ZoomBtnEffect : MonoBehaviour
     void Start()
     {
         transform.localScale = Vector3.one * 0.8f;
+        transform.DOScale(Vector3.one * 1.1f, 0.5f).SetLoops(-1, LoopType.Yoyo);
     }
 
     // Update is called once per frame
@@ -19,6 +20,6 @@ public class ZoomBtnEffect : MonoBehaviour
 
     private void OnEnable()
     {
-        transform.DOScale(Vector3.one * 1.1f, 0.5f).SetLoops(-1, LoopType.Yoyo);
+        //transform.DOScale(Vector3.one * 1.1f, 0.5f).SetLoops(-1, LoopType.Yoyo);
     }
 }
