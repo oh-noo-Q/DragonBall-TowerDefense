@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 9050090}
   - component: {fileID: 9050089}
   m_Layer: 0
-  m_Name: SkeletonGraphic (loading_screen_3)
+  m_Name: loading_screen_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

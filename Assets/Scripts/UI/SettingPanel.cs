@@ -4,11 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum SelectionSetting
+{
+    Music,
+    SFX,
+    Vibration,
+
+}
 public class SettingPanel : MonoBehaviour
 {
     public Button privacyButton, termsButton, closeButton, closeRateButton, rateUsButton;
     public GameObject rateSuccess, settingPanel;
-    public Toggle vibrationToggle, soundToggle;
+    public Button vibrationBtn, musicBtn, sfxBtn;
+    public Text musicTxt, sfxTxt, vibrationTxt;
     public List<Image> starGroup;
     public Image vibraToggleBg, soundToggleBg;
     public RectTransform vibraHandle, soundHandle;
@@ -17,6 +25,7 @@ public class SettingPanel : MonoBehaviour
 
     private int _currentRateIndex = -1;
 
+    private bool onMusic, onSFX, onVibration;
 
     private void Start()
     {
@@ -24,8 +33,9 @@ public class SettingPanel : MonoBehaviour
         termsButton.onClick.AddListener(TermsOnClick);
         closeButton.onClick.AddListener(CloseOnClick);
         //closeRateButton.onClick.AddListener(CloseRateOnClick);
-        vibrationToggle.onValueChanged.AddListener(VibraClick);
-        soundToggle.onValueChanged.AddListener(SoundClick);
+        vibrationBtn.onClick.AddListener(VibraClick);
+        musicBtn.onClick.AddListener(MusicClick);
+        sfxBtn.onClick.AddListener(SFXClick);
         //rateUsButton.onClick.AddListener(OnRateUsClick);
     }
 
@@ -44,9 +54,6 @@ public class SettingPanel : MonoBehaviour
 
     private void UpdateUI()
     {
-        soundToggle.isOn = UserData.SoundSetting;
-        vibrationToggle.isOn = UserData.VibrationSetting;
-
         UpdateUISound(UserData.SoundSetting);
         UpdateUIVibra(UserData.VibrationSetting);
         SetStar(4);
@@ -74,17 +81,40 @@ public class SettingPanel : MonoBehaviour
         soundHandle.localPosition = new Vector2(isOn ? rightPos : leftPos, 0);
     }
 
-    private void SoundClick(bool toggle)
+    private void MusicClick()
     {
-        UserData.SoundSetting = toggle;
-        UpdateUISound(toggle);
-        EventDispatcher.Instance.PostEvent(EventID.Mute, toggle);
+        onMusic = !onMusic;
+        musicTxt.text = SetTextShow(SelectionSetting.Music, onMusic);
     }
 
-    private void VibraClick(bool toggle)
+    private void VibraClick()
     {
-        UserData.VibrationSetting = toggle;
-        UpdateUIVibra(toggle);
+        onSFX = !onSFX;
+        sfxTxt.text = SetTextShow(SelectionSetting.SFX, onSFX);
+    }
+
+    private void SFXClick()
+    {
+        onVibration = !onVibration;
+        vibrationTxt.text = SetTextShow(SelectionSetting.Vibration, onVibration);
+    }
+
+    private string SetTextShow(SelectionSetting selection, bool on)
+    {
+        string resultText = "";
+        switch(selection)
+        {
+            case SelectionSetting.SFX:
+                resultText = on ? $"{SelectionSetting.SFX} On" : $"{SelectionSetting.SFX} Off";
+                break;
+            case SelectionSetting.Music:
+                resultText = on ? $"{SelectionSetting.Music} On" : $"{SelectionSetting.Music} Off";
+                break;
+            case SelectionSetting.Vibration:
+                resultText = on ? $"{SelectionSetting.Vibration} On" : $"{SelectionSetting.Vibration} Off";
+                break;
+        }
+        return resultText;
     }
 
     private void CloseOnClick()
