@@ -5,7 +5,9 @@ using UnityEngine;
 public static class UserData
 {
     private const string Current_Level = "user_current_level";
-    private const string Sound_Setting = "user_sound_setting";
+    private const string COLLECT_ITEM_IN_LEVEL = "collect_item_in_level";
+    private const string Music_Setting = "user_music_setting";
+    private const string SFX_Setting = "user_sfx_setting";
     private const string Vibration_Setting = "user_vibration_setting";
     private const string Current_Coin = "user_current_coin";
     private const string NUMBER_RADA_PREFS = "number_rada";
@@ -17,7 +19,16 @@ public static class UserData
     public static int CurrentLevel
     {
         get => PlayerPrefs.GetInt(Current_Level, 1);
-        set => PlayerPrefs.SetInt(Current_Level, value);
+        set
+        {
+            PlayerPrefs.SetInt(Current_Level, value);
+        }
+    }
+
+    public static bool CollectItemInLevel
+    {
+        get => PlayerPrefs.GetInt(COLLECT_ITEM_IN_LEVEL, 1) == 1;
+        set => PlayerPrefs.SetFloat(COLLECT_ITEM_IN_LEVEL, value ? 1 : 0);
     }
 
     public static int CurrentCoin
@@ -29,10 +40,16 @@ public static class UserData
         }
     }
 
-    public static bool SoundSetting
+    public static bool MusicSetting
     {
-        get => PlayerPrefs.GetInt(Sound_Setting, 1) == 1;
-        set => PlayerPrefs.SetInt(Sound_Setting, value ? 1 : 0);
+        get => PlayerPrefs.GetInt(Music_Setting, 1) == 1;
+        set => PlayerPrefs.SetInt(Music_Setting, value ? 1 : 0);
+    }
+
+    public static bool SFXSetting
+    {
+        get => PlayerPrefs.GetInt(Music_Setting, 1) == 1;
+        set => PlayerPrefs.SetInt(Music_Setting, value ? 1 : 0);
     }
 
     public static bool VibrationSetting

@@ -15,4 +15,6 @@ public class DragonWishController : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    
 }

@@ -29,6 +29,10 @@ public class SettingPanel : MonoBehaviour
 
     private void Start()
     {
+        onMusic = UserData.MusicSetting;
+        onSFX = UserData.SFXSetting;
+        onVibration = UserData.VibrationSetting;
+
         privacyButton.onClick.AddListener(PrivacyOnClick);
         termsButton.onClick.AddListener(TermsOnClick);
         closeButton.onClick.AddListener(CloseOnClick);
@@ -54,9 +58,8 @@ public class SettingPanel : MonoBehaviour
 
     private void UpdateUI()
     {
-        UpdateUISound(UserData.SoundSetting);
+        UpdateUISound(UserData.MusicSetting);
         UpdateUIVibra(UserData.VibrationSetting);
-        SetStar(4);
     }
 
     private void UpdateUIVibra(bool isOn)
@@ -84,18 +87,21 @@ public class SettingPanel : MonoBehaviour
     private void MusicClick()
     {
         onMusic = !onMusic;
+        UserData.MusicSetting = onMusic;
         musicTxt.text = SetTextShow(SelectionSetting.Music, onMusic);
     }
 
     private void VibraClick()
     {
         onSFX = !onSFX;
+        UserData.SFXSetting = onSFX;
         sfxTxt.text = SetTextShow(SelectionSetting.SFX, onSFX);
     }
 
     private void SFXClick()
     {
         onVibration = !onVibration;
+        UserData.VibrationSetting = onVibration;
         vibrationTxt.text = SetTextShow(SelectionSetting.Vibration, onVibration);
     }
 

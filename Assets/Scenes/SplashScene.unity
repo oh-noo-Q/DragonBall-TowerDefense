@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 9050088}
   - component: {fileID: 9050090}
   - component: {fileID: 9050089}
+  - component: {fileID: 9050091}
   m_Layer: 0
   m_Name: loading_screen_3
   m_TagString: Untagged
@@ -214,6 +215,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9050087}
   m_CullTransparentMesh: 1
+--- !u!114 &9050091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9050087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d41f8d199f8de942bdf85083715d9ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &134336868
 GameObject:
   m_ObjectHideFlags: 0
