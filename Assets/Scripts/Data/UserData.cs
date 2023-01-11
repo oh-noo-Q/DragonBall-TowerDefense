@@ -5,7 +5,8 @@ using UnityEngine;
 public static class UserData
 {
     private const string Current_Level = "user_current_level";
-    private const string COLLECT_ITEM_IN_LEVEL = "collect_item_in_level";
+    private const string ITEM_COLLECT_IN_LEVEL = "collect_item_in_level";
+    private const string BALL_COLLECT_IN_LEVEL = "balls_collect_in_level";
     private const string Music_Setting = "user_music_setting";
     private const string SFX_Setting = "user_sfx_setting";
     private const string Vibration_Setting = "user_vibration_setting";
@@ -25,12 +26,6 @@ public static class UserData
         }
     }
 
-    public static bool CollectItemInLevel
-    {
-        get => PlayerPrefs.GetInt(COLLECT_ITEM_IN_LEVEL, 1) == 1;
-        set => PlayerPrefs.SetFloat(COLLECT_ITEM_IN_LEVEL, value ? 1 : 0);
-    }
-
     public static int CurrentCoin
     {
         get => PlayerPrefs.GetInt(Current_Coin);
@@ -48,8 +43,8 @@ public static class UserData
 
     public static bool SFXSetting
     {
-        get => PlayerPrefs.GetInt(Music_Setting, 1) == 1;
-        set => PlayerPrefs.SetInt(Music_Setting, value ? 1 : 0);
+        get => PlayerPrefs.GetInt(SFX_Setting, 1) == 1;
+        set => PlayerPrefs.SetInt(SFX_Setting, value ? 1 : 0);
     }
 
     public static bool VibrationSetting
@@ -173,5 +168,91 @@ public static class UserData
     {
         get => PlayerPrefs.GetInt(CURRENT_CHARACTER, 0);
         set => PlayerPrefs.SetInt(CURRENT_CHARACTER, value);
+    }
+
+    private static List<int> _ballCollectCurrentLevel;
+
+    public static List<int> BallCollectCurrentLevel
+    {
+        get
+        {
+            if (_ballCollectCurrentLevel == null)
+            {
+                try
+                {
+                    _ballCollectCurrentLevel = new List<int>();
+                    int[] temp = PlayerPrefsElite.GetIntArray(BALL_COLLECT_IN_LEVEL);
+                    _ballCollectCurrentLevel.AddRange(temp);
+
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError(e);
+                    return _ballCollectCurrentLevel;
+                }
+            }
+            return _ballCollectCurrentLevel;
+        }
+        set
+        {
+            _ballCollectCurrentLevel = value;
+            PlayerPrefsElite.SetIntArray(BALL_COLLECT_IN_LEVEL, value.ToArray());
+        }
+    }
+
+    public static void AddBallCollectLevel(int value)
+    {
+        List<int> ballCollectLevel = BallCollectCurrentLevel;
+        ballCollectLevel.Add(value);
+        BallCollectCurrentLevel = ballCollectLevel;
+    }
+
+    public static void NewBallCollectLevel()
+    {
+        List<int> dragonBall = new List<int>();
+        BallCollectCurrentLevel = dragonBall;
+    }
+
+    private static List<int> _itemCollectCurrentLevel;
+
+    public static List<int> ItemCollectCurrentLevel
+    {
+        get
+        {
+            if (_itemCollectCurrentLevel == null)
+            {
+                try
+                {
+                    _itemCollectCurrentLevel = new List<int>();
+                    int[] temp = PlayerPrefsElite.GetIntArray(ITEM_COLLECT_IN_LEVEL);
+                    _itemCollectCurrentLevel.AddRange(temp);
+
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError(e);
+                    return _itemCollectCurrentLevel;
+                }
+            }
+            return _itemCollectCurrentLevel;
+        }
+        set
+        {
+            _itemCollectCurrentLevel = value;
+            PlayerPrefsElite.SetIntArray(ITEM_COLLECT_IN_LEVEL, value.ToArray());
+        }
+    }
+
+    public static void AddItemCollectLevel(int value)
+    {
+        List<int> itemCollectLevel = ItemCollectCurrentLevel;
+        itemCollectLevel.Add(value);
+        ItemCollectCurrentLevel = itemCollectLevel;
+    }
+
+    public static void NewItemCollectLevel()
+    {
+        List<int> itemCollectLevel = new List<int>();
+        ItemCollectCurrentLevel = itemCollectLevel;
     }
 }
