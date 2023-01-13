@@ -2003,8 +2003,6 @@ MonoBehaviour:
   rateUsButton: {fileID: 8396973052477413416}
   rateSuccess: {fileID: 0}
   settingPanel: {fileID: 0}
-  vibrationToggle: {fileID: 1701459434932488880}
-  soundToggle: {fileID: 3543224663357193381}
   starGroup:
   - {fileID: 6289288586653506250}
   - {fileID: 4354372065228277351}
@@ -2021,6 +2019,15 @@ MonoBehaviour:
   starWhite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   leftPos: -12.5
   rightPos: 12.5
+  vibrationBtn: {fileID: 4820156598357978717}
+  musicBtn: {fileID: 8341848906714537632}
+  sfxBtn: {fileID: 7416115371657685160}
+  musicTxt: {fileID: 525777466445454605}
+  sfxTxt: {fileID: 7893023875513666437}
+  vibrationTxt: {fileID: 6681607438968665461}
+  musicIcon: {fileID: 4218394637020219335}
+  sfxIcon: {fileID: 3759703372480660097}
+  vibrationIcon: {fileID: 3221762702011466168}
 --- !u!1 &3618106396427685237
 GameObject:
   m_ObjectHideFlags: 0

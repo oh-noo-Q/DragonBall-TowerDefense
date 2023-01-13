@@ -12142,6 +12142,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3411590095565642275, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 1332
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218394637020219335, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218394637020219335, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218394637020219335, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218394637020219335, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
+      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5678164243661868435, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
@@ -12159,6 +12175,10 @@ PrefabInstance:
     - target: {fileID: 5678164243661868435, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681607438968665461, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
+      propertyPath: m_text
+      value: Vibration on
       objectReference: {fileID: 0}
     - target: {fileID: 8815879592332642581, guid: 7a4474cb1b415454f98c7d9de9a27b49, type: 3}
       propertyPath: m_AnchorMax.y

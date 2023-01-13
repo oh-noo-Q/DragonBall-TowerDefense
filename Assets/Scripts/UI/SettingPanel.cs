@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,18 +16,20 @@ public class SettingPanel : MonoBehaviour
 {
     public Button privacyButton, termsButton, closeButton, closeRateButton, rateUsButton;
     public GameObject rateSuccess, settingPanel;
-    public Button vibrationBtn, musicBtn, sfxBtn;
-    public Text musicTxt, sfxTxt, vibrationTxt;
     public List<Image> starGroup;
     public Image vibraToggleBg, soundToggleBg;
     public RectTransform vibraHandle, soundHandle;
     public Sprite toggleBgOn, toggleBgOff, starYell, starWhite;
     public float leftPos, rightPos;
 
-    private int _currentRateIndex = -1;
+    public Button vibrationBtn, musicBtn, sfxBtn;
+    public TextMeshProUGUI musicTxt, sfxTxt, vibrationTxt;
+    public Image musicIcon, sfxIcon, vibrationIcon;
 
+    private float alphaIconOff = 150f;
     private bool onMusic, onSFX, onVibration;
 
+    private int _currentRateIndex = -1;
     private void Start()
     {
         onMusic = UserData.MusicSetting;
@@ -89,20 +92,38 @@ public class SettingPanel : MonoBehaviour
         onMusic = !onMusic;
         UserData.MusicSetting = onMusic;
         musicTxt.text = SetTextShow(SelectionSetting.Music, onMusic);
+        if(onMusic)
+        {
+            musicIcon.color = new Color(0, 0, 0, 255);
+        }
+        else
+            musicIcon.color = new Color(0, 0, 0, alphaIconOff);
     }
 
     private void VibraClick()
     {
-        onSFX = !onSFX;
-        UserData.SFXSetting = onSFX;
-        sfxTxt.text = SetTextShow(SelectionSetting.SFX, onSFX);
+        onVibration = !onVibration;
+        UserData.VibrationSetting = onVibration;
+        vibrationTxt.text = SetTextShow(SelectionSetting.Vibration, onVibration);
+        if (onVibration)
+        {
+            vibrationIcon.color = new Color(0, 0, 0, 255);
+        }
+        else
+            vibrationIcon.color = new Color(0, 0, 0, alphaIconOff);
     }
 
     private void SFXClick()
     {
-        onVibration = !onVibration;
-        UserData.VibrationSetting = onVibration;
-        vibrationTxt.text = SetTextShow(SelectionSetting.Vibration, onVibration);
+        onSFX = !onSFX;
+        UserData.SFXSetting = onSFX;
+        sfxTxt.text = SetTextShow(SelectionSetting.SFX, onSFX);
+        if (onSFX)
+        {
+            sfxIcon.color = new Color(0, 0, 0, 255);
+        }
+        else
+            sfxIcon.color = new Color(0, 0, 0, alphaIconOff);
     }
 
     private string SetTextShow(SelectionSetting selection, bool on)
