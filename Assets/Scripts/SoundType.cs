@@ -15,4 +15,9 @@ public enum SoundType
     Kame,
     MiniKame,
     FlyKame,
+    MainScene,
+    GameplayBG,
+    LoseBG,
+    WinBG,
+    WishDragon
 }

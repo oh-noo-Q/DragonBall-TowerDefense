@@ -22,9 +22,9 @@ public class SoundManager : MonoBehaviour
             return;
         }
 
-        //musicSource.enabled = PlayerPrefsManager.Sound;
-        //soundSource.enabled = PlayerPrefsManager.Sound;
-        //noise.enabled = PlayerPrefsManager.Sound;
+        musicSource.enabled = UserData.MusicSetting;
+        soundSource.enabled = UserData.SFXSetting;
+        //noise.enabled = UserData.;
         EventDispatcher.Instance.RegisterListener(EventID.OnSoundChangeValue, OnSoundChangeValue);
         EventDispatcher.Instance.RegisterListener(EventID.OnMusicChangeValue, OnMusicChangeValue);
 
@@ -34,28 +34,24 @@ public class SoundManager : MonoBehaviour
     private void OnSoundChangeValue(object obj)
     {
         if (this == null) return;
-        musicSource.enabled = (bool)obj;
         soundSource.enabled = (bool)obj;
-        noise.enabled = (bool)obj;
     }
 
     private void OnMusicChangeValue(object obj)
     {
         if (this == null) return;
         musicSource.enabled = (bool)obj;
-        soundSource.enabled = (bool)obj;
-        noise.enabled = (bool)obj;
-        //musicSource.volume = 0.4f * MusicVolume.Value;
     }
 
     void OnEnable()
     {
         if (musicSource == null) return;
-        //musicSource.enabled = PlayerPrefsManager.Sound;
+        musicSource.enabled = UserData.MusicSetting;
     }
 
     public void PlayMusic(SoundType type, bool looping = true)
     {
+        if (!UserData.MusicSetting) return;
         AudioClip clip = SoundSourceManager.Instance.GetSoundWithType(type);
         PlayMusic(clip, looping);
     }
@@ -88,7 +84,6 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySingle(AudioClip clip, float volume = 1f, bool pauseMusic = false)
     {
-        //if (!PlayerPrefsManager.Sound) return;
         soundSource.pitch = Random.Range(0.98f, 1.02f);
         soundSource.PlayOneShot(clip, volume);
         if (pauseMusic) StartCoroutine(PauseMusic(clip.length));
@@ -96,9 +91,9 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySingle(SoundType type, float volume = 1f, bool pauseMusic = false)
     {
+        if (!UserData.SFXSetting) return;
         AudioClip clip = SoundSourceManager.Instance.GetSoundWithType(type);
         PlaySingle(clip, volume, pauseMusic);
-
     }
 
     public void PlayMultiply(SoundType type, SoundType type1, SoundType type2)

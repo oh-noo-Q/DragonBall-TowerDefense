@@ -61,14 +61,9 @@ public class SettingPanel : MonoBehaviour
 
     private void UpdateUI()
     {
-        UpdateUISound(UserData.MusicSetting);
-        UpdateUIVibra(UserData.VibrationSetting);
-    }
-
-    private void UpdateUIVibra(bool isOn)
-    {
-        vibraToggleBg.sprite = isOn ? toggleBgOn : toggleBgOff;
-        vibraHandle.localPosition = new Vector2(isOn ? rightPos : leftPos, 0);
+        UpdateUIElement(UserData.MusicSetting, musicIcon, musicTxt);
+        UpdateUIElement(UserData.VibrationSetting, vibrationIcon, vibrationTxt);
+        UpdateUIElement(UserData.SFXSetting, sfxIcon, sfxTxt);
     }
 
     public void SetStar(int index)
@@ -81,23 +76,28 @@ public class SettingPanel : MonoBehaviour
         }
     }
 
-    private void UpdateUISound(bool isOn)
+    private void UpdateUIElement(bool isOn, Image icon, TextMeshProUGUI txt)
     {
-        soundToggleBg.sprite = isOn ? toggleBgOn : toggleBgOff;
-        soundHandle.localPosition = new Vector2(isOn ? rightPos : leftPos, 0);
+        if (isOn)
+        {
+            icon.color = new Color(0, 0, 0, 255);
+            txt.color = new Color(0, 0, 0, 255);
+        }
+        else
+        {
+            icon.color = new Color(0, 0, 0, alphaIconOff / 255f);
+            txt.color = new Color(0, 0, 0, alphaIconOff / 255f);
+        }
     }
+
 
     private void MusicClick()
     {
         onMusic = !onMusic;
         UserData.MusicSetting = onMusic;
         musicTxt.text = SetTextShow(SelectionSetting.Music, onMusic);
-        if(onMusic)
-        {
-            musicIcon.color = new Color(0, 0, 0, 255);
-        }
-        else
-            musicIcon.color = new Color(0, 0, 0, alphaIconOff);
+
+        UpdateUIElement(onMusic, musicIcon, musicTxt);
     }
 
     private void VibraClick()
@@ -105,12 +105,8 @@ public class SettingPanel : MonoBehaviour
         onVibration = !onVibration;
         UserData.VibrationSetting = onVibration;
         vibrationTxt.text = SetTextShow(SelectionSetting.Vibration, onVibration);
-        if (onVibration)
-        {
-            vibrationIcon.color = new Color(0, 0, 0, 255);
-        }
-        else
-            vibrationIcon.color = new Color(0, 0, 0, alphaIconOff);
+
+        UpdateUIElement(onVibration, vibrationIcon, vibrationTxt);
     }
 
     private void SFXClick()
@@ -118,12 +114,8 @@ public class SettingPanel : MonoBehaviour
         onSFX = !onSFX;
         UserData.SFXSetting = onSFX;
         sfxTxt.text = SetTextShow(SelectionSetting.SFX, onSFX);
-        if (onSFX)
-        {
-            sfxIcon.color = new Color(0, 0, 0, 255);
-        }
-        else
-            sfxIcon.color = new Color(0, 0, 0, alphaIconOff);
+
+        UpdateUIElement(onSFX, sfxIcon, sfxTxt);
     }
 
     private string SetTextShow(SelectionSetting selection, bool on)
