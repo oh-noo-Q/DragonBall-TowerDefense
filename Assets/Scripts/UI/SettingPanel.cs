@@ -96,7 +96,7 @@ public class SettingPanel : MonoBehaviour
         onMusic = !onMusic;
         UserData.MusicSetting = onMusic;
         musicTxt.text = SetTextShow(SelectionSetting.Music, onMusic);
-
+        EventDispatcher.Instance.PostEvent(EventID.OnMusicChangeValue, onMusic);
         UpdateUIElement(onMusic, musicIcon, musicTxt);
     }
 
@@ -105,7 +105,7 @@ public class SettingPanel : MonoBehaviour
         onVibration = !onVibration;
         UserData.VibrationSetting = onVibration;
         vibrationTxt.text = SetTextShow(SelectionSetting.Vibration, onVibration);
-
+        
         UpdateUIElement(onVibration, vibrationIcon, vibrationTxt);
     }
 
@@ -114,7 +114,7 @@ public class SettingPanel : MonoBehaviour
         onSFX = !onSFX;
         UserData.SFXSetting = onSFX;
         sfxTxt.text = SetTextShow(SelectionSetting.SFX, onSFX);
-
+        EventDispatcher.Instance.PostEvent(EventID.OnSoundChangeValue, onSFX);
         UpdateUIElement(onSFX, sfxIcon, sfxTxt);
     }
 

@@ -24,6 +24,7 @@ public class MenuUI : MonoBehaviour
     {
         playButton.interactable = true;
         levelText.text = "Level " + UserData.CurrentLevel.ToString();
+        SoundManager.instance.PlayMusic(SoundType.MainScene);
     }
 
     private void ShowSettingPanel()
@@ -64,6 +65,6 @@ public class MenuUI : MonoBehaviour
 
     public void ShowWishDragonBall()
     {
-
+                    
     }
 }

@@ -207,6 +207,7 @@ public class GameManager : MonoBehaviour
             //gameMode = GameMode.PLAYING;
         }
         gameMode = GameMode.AUTOPLAY;
+        SoundManager.instance.PlayMusic(SoundType.GameplayBG);
     }
 
     public void GameIntro()
@@ -292,6 +293,7 @@ public class GameManager : MonoBehaviour
 
     private void Win(object param)
     {
+        SoundManager.instance.PlayMusic(SoundType.WinBG);
         player.transform.SetParent(null);
         mainCamera.transform.localPosition = new Vector3(-64, -6.3f, 0);
         mainCamera.orthographicSize = 13f;

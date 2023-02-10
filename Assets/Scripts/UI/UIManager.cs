@@ -33,6 +33,7 @@ public class UIManager : Singleton<UIManager>
 
     private void OnStartShowLoseUI(object param)
     {
+        SoundManager.instance.PlayMusic(SoundType.LoseBG);
         gameplayUI.ShowButtons(false);
         StartCoroutine(ShowLoseUI());
     }
